@@ -1,0 +1,31 @@
+{
+ "at": "2026-11-19T22:15:31+00:00",
+ "suite": "freecodecamp",
+ "repo": "boba-benchmarks/freecodecamp",
+ "runner": "github-4",
+ "shards": "1",
+ "note": "measured",
+ "run": "https://github.com/boba-benchmarks/freecodecamp/actions/runs/44623661900",
+ "run_id": 44623661900,
+ "sha": "b75488463cbaabdacb22a62382afd3fa40e3b3a4",
+ "conclusion": "success",
+ "wall_s": 1145,
+ "queue_s": 3,
+ "job_s": 1343,
+ "jobs": 3,
+ "job_max_s": 639,
+ "vcpu_min": 89.5,
+ "billed_min": 24,
+ "usd": 0.288,
+ "tests": {
+  "passed": 273,
+  "failed": 0,
+  "flaky": 1,
+  "skipped": 17,
+  "failed_tests": [],
+  "flaky_tests": [
+   "settings.spec.ts::should scroll to certification sections when navigating with hash::chromium"
+  ],
+  "files": 1
+ }
+}
