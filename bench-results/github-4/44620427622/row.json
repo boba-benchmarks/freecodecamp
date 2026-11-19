@@ -1,0 +1,32 @@
+{
+ "at": "2026-11-19T21:55:49+00:00",
+ "suite": "freecodecamp",
+ "repo": "boba-benchmarks/freecodecamp",
+ "runner": "github-4",
+ "shards": "1",
+ "note": "measured",
+ "run": "https://github.com/boba-benchmarks/freecodecamp/actions/runs/44620427622",
+ "run_id": 44620427622,
+ "sha": "b75488463cbaabdacb22a62382afd3fa40e3b3a4",
+ "conclusion": "success",
+ "wall_s": 1153,
+ "queue_s": 3,
+ "job_s": 1357,
+ "jobs": 3,
+ "job_max_s": 684,
+ "vcpu_min": 90.5,
+ "billed_min": 24,
+ "usd": 0.288,
+ "tests": {
+  "passed": 272,
+  "failed": 0,
+  "flaky": 2,
+  "skipped": 17,
+  "failed_tests": [],
+  "flaky_tests": [
+   "hotkeys.spec.ts::User can use Cmd+Enter to submit their answer in a multiple-choice question challenge::chromium",
+   "hotkeys.spec.ts::User can use Ctrl+Enter to submit their answer in a multiple-choice question challenge::chromium"
+  ],
+  "files": 1
+ }
+}
