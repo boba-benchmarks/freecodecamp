@@ -1,0 +1,29 @@
+{
+ "at": "2026-11-19T21:13:47+00:00",
+ "suite": "freecodecamp",
+ "repo": "boba-benchmarks/freecodecamp",
+ "runner": "github-4",
+ "shards": "1",
+ "note": "superseded",
+ "run": "https://github.com/boba-benchmarks/freecodecamp/actions/runs/44611494155",
+ "run_id": 44611494155,
+ "sha": "27ce39f845fec3b0c5471afaa9349939ece5aef5",
+ "conclusion": "success",
+ "wall_s": 1641,
+ "queue_s": 6,
+ "job_s": 1852,
+ "jobs": 3,
+ "job_max_s": 1156,
+ "vcpu_min": 123.5,
+ "billed_min": 33,
+ "usd": 0.396,
+ "tests": {
+  "passed": 274,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 17,
+  "failed_tests": [],
+  "flaky_tests": [],
+  "files": 1
+ }
+}

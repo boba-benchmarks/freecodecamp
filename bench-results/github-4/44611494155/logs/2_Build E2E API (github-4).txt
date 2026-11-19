@@ -1,0 +1,783 @@
+﻿2026-11-19T20:43:09.5488247Z Current runner version: '2.338.2'
+2026-11-19T20:43:09.5504506Z ##[group]Runner Image Provisioner
+2026-11-19T20:43:09.5505169Z Hosted Compute Agent
+2026-11-19T20:43:09.5505648Z Version: 20261111.635
+2026-11-19T20:43:09.5506121Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+2026-11-19T20:43:09.5506632Z Build Date: 2026-11-11T01:49:01Z
+2026-11-19T20:43:09.5507121Z Worker ID: {5eb1a1ac-f99a-433a-baf9-8bac92c22df1}
+2026-11-19T20:43:09.5507622Z Region: us-west-2
+2026-11-19T20:43:09.5507993Z Cloud: AWS
+2026-11-19T20:43:09.5508405Z ##[endgroup]
+2026-11-19T20:43:09.5509347Z ##[group]Operating System
+2026-11-19T20:43:09.5509777Z Ubuntu
+2026-11-19T20:43:09.5510144Z 24.04.5
+2026-11-19T20:43:09.5510497Z LTS
+2026-11-19T20:43:09.5510959Z ##[endgroup]
+2026-11-19T20:43:09.5511338Z ##[group]Runner Image
+2026-11-19T20:43:09.5511751Z Image: ubuntu-24.04
+2026-11-19T20:43:09.5512144Z Version: 20261116.133.1
+2026-11-19T20:43:09.5513051Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261116.133/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-19T20:43:09.5514137Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261116.133
+2026-11-19T20:43:09.5515004Z ##[endgroup]
+2026-11-19T20:43:09.5515972Z ##[group]GITHUB_TOKEN Permissions
+2026-11-19T20:43:09.5517547Z Actions: read
+2026-11-19T20:43:09.5517948Z Checks: write
+2026-11-19T20:43:09.5518328Z Contents: read
+2026-11-19T20:43:09.5518719Z Metadata: read
+2026-11-19T20:43:09.5519101Z PullRequests: write
+2026-11-19T20:43:09.5519528Z ##[endgroup]
+2026-11-19T20:43:09.5520956Z Secret source: Actions
+2026-11-19T20:43:09.5521867Z Cache mode: write
+2026-11-19T20:43:09.5522331Z Prepare workflow directory
+2026-11-19T20:43:09.5745625Z Prepare all required actions
+2026-11-19T20:43:09.5780950Z Getting action download info
+2026-11-19T20:43:09.9127905Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-11-19T20:43:11.4603416Z Download action repository 'actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+2026-11-19T20:43:11.7201163Z Complete job name: Build E2E API (github-4)
+2026-11-19T20:43:11.7918822Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+2026-11-19T20:43:11.7920242Z with:
+2026-11-19T20:43:11.7920991Z   persist-credentials: false
+2026-11-19T20:43:11.7921840Z   submodules: recursive
+2026-11-19T20:43:11.7922854Z   repository: boba-benchmarks/freecodecamp
+2026-11-19T20:43:11.7930352Z   token: ***
+2026-11-19T20:43:11.7931099Z   ssh-strict: true
+2026-11-19T20:43:11.7931847Z   ssh-user: git
+2026-11-19T20:43:11.7932584Z   clean: true
+2026-11-19T20:43:11.7933354Z   sparse-checkout-cone-mode: true
+2026-11-19T20:43:11.7934388Z   fetch-depth: 1
+2026-11-19T20:43:11.7935139Z   fetch-tags: false
+2026-11-19T20:43:11.7935931Z   show-progress: true
+2026-11-19T20:43:11.7936702Z   lfs: false
+2026-11-19T20:43:11.7937456Z   set-safe-directory: true
+2026-11-19T20:43:11.7938372Z   allow-unsafe-pr-checkout: false
+2026-11-19T20:43:11.7939455Z ##[endgroup]
+2026-11-19T20:43:14.4965286Z Syncing repository: boba-benchmarks/freecodecamp
+2026-11-19T20:43:14.4967315Z ##[group]Getting Git version info
+2026-11-19T20:43:14.4968130Z Working directory is '/home/runner/work/freecodecamp/freecodecamp'
+2026-11-19T20:43:14.4968899Z [command]/usr/bin/git version
+2026-11-19T20:43:14.9188770Z git version 2.56.1
+2026-11-19T20:43:14.9202510Z ##[endgroup]
+2026-11-19T20:43:14.9211825Z Temporarily overriding HOME='/home/runner/work/_temp/e5795257-0971-49f0-a0cb-364585ab0063' before making global git config changes
+2026-11-19T20:43:14.9212650Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-19T20:43:14.9216844Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/freecodecamp/freecodecamp
+2026-11-19T20:43:14.9673916Z Deleting the contents of '/home/runner/work/freecodecamp/freecodecamp'
+2026-11-19T20:43:14.9676342Z ##[group]Determining repository object format
+2026-11-19T20:43:14.9677420Z ##[endgroup]
+2026-11-19T20:43:14.9680927Z ##[group]Initializing the repository
+2026-11-19T20:43:14.9681403Z [command]/usr/bin/git init /home/runner/work/freecodecamp/freecodecamp
+2026-11-19T20:43:15.1139082Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-19T20:43:15.1139804Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-19T20:43:15.1140264Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-19T20:43:15.1140653Z hint: call:
+2026-11-19T20:43:15.1140897Z hint:
+2026-11-19T20:43:15.1141265Z hint: 	git config --global init.defaultBranch <name>
+2026-11-19T20:43:15.1141642Z hint:
+2026-11-19T20:43:15.1141989Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-19T20:43:15.1142402Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-19T20:43:15.1142756Z hint:
+2026-11-19T20:43:15.1142986Z hint: 	git branch -m <name>
+2026-11-19T20:43:15.1143311Z hint:
+2026-11-19T20:43:15.1143685Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-19T20:43:15.1149780Z Initialized empty Git repository in /home/runner/work/freecodecamp/freecodecamp/.git/
+2026-11-19T20:43:15.1158602Z [command]/usr/bin/git remote add origin https://github.com/boba-benchmarks/freecodecamp
+2026-11-19T20:43:15.1209434Z ##[endgroup]
+2026-11-19T20:43:15.1210279Z ##[group]Disabling automatic garbage collection
+2026-11-19T20:43:15.1212611Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-19T20:43:15.1237865Z ##[endgroup]
+2026-11-19T20:43:15.1238492Z ##[group]Setting up auth
+2026-11-19T20:43:15.1238870Z Removing SSH command configuration
+2026-11-19T20:43:15.1243024Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T20:43:15.1272253Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T20:43:15.4443110Z Removing HTTP extra header
+2026-11-19T20:43:15.4448956Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T20:43:15.4476457Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T20:43:15.4619474Z Removing includeIf entries pointing to credentials config files
+2026-11-19T20:43:15.4623536Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T20:43:15.4668552Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T20:43:15.4801675Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-aa2b74ae-db56-4113-916c-9ea9c985c114.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-19T20:43:15.4830429Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/freecodecamp/freecodecamp/.git.path /home/runner/work/_temp/git-credentials-aa2b74ae-db56-4113-916c-9ea9c985c114.config
+2026-11-19T20:43:15.4852237Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/freecodecamp/freecodecamp/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-aa2b74ae-db56-4113-916c-9ea9c985c114.config
+2026-11-19T20:43:15.4873520Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-aa2b74ae-db56-4113-916c-9ea9c985c114.config
+2026-11-19T20:43:15.4896355Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-aa2b74ae-db56-4113-916c-9ea9c985c114.config
+2026-11-19T20:43:15.4916170Z ##[endgroup]
+2026-11-19T20:43:15.4916775Z ##[group]Fetching the repository
+2026-11-19T20:43:15.4920928Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +27ce39f845fec3b0c5471afaa9349939ece5aef5:refs/remotes/origin/main
+2026-11-19T20:43:16.7488193Z From https://github.com/boba-benchmarks/freecodecamp
+2026-11-19T20:43:16.7488936Z  * [new ref]           27ce39f845fec3b0c5471afaa9349939ece5aef5 -> origin/main
+2026-11-19T20:43:16.7497358Z [command]/usr/bin/git branch --list --remote origin/main
+2026-11-19T20:43:16.7532247Z   origin/main
+2026-11-19T20:43:16.7537423Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-11-19T20:43:16.7557195Z 27ce39f845fec3b0c5471afaa9349939ece5aef5
+2026-11-19T20:43:16.7559383Z ##[endgroup]
+2026-11-19T20:43:16.7559971Z ##[group]Determining the checkout info
+2026-11-19T20:43:16.7560633Z ##[endgroup]
+2026-11-19T20:43:16.7564557Z [command]/usr/bin/git sparse-checkout disable
+2026-11-19T20:43:16.7620686Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-19T20:43:16.7642351Z ##[group]Checking out the ref
+2026-11-19T20:43:16.7645421Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-19T20:43:17.3232325Z Switched to a new branch 'main'
+2026-11-19T20:43:17.3238040Z branch 'main' set up to track 'origin/main'.
+2026-11-19T20:43:17.3253475Z ##[endgroup]
+2026-11-19T20:43:17.3254121Z ##[group]Setting up auth for fetching submodules
+2026-11-19T20:43:17.3258729Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-aa2b74ae-db56-4113-916c-9ea9c985c114.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-19T20:43:17.3295605Z [command]/usr/bin/git config --global include.path /home/runner/work/_temp/git-credentials-aa2b74ae-db56-4113-916c-9ea9c985c114.config
+2026-11-19T20:43:17.3324752Z [command]/usr/bin/git config --global --unset-all url.https://github.com/.insteadOf
+2026-11-19T20:43:17.3351072Z [command]/usr/bin/git config --global --add url.https://github.com/.insteadOf git@github.com:
+2026-11-19T20:43:17.3376954Z [command]/usr/bin/git config --global --add url.https://github.com/.insteadOf org-358005552@github.com:
+2026-11-19T20:43:17.3397467Z ##[endgroup]
+2026-11-19T20:43:17.3398360Z ##[group]Fetching submodules
+2026-11-19T20:43:17.3400568Z [command]/usr/bin/git submodule sync --recursive
+2026-11-19T20:43:17.3580269Z [command]/usr/bin/git -c protocol.version=2 submodule update --init --force --depth=1 --recursive
+2026-11-19T20:43:17.3772456Z Submodule 'curriculum/i18n-curriculum' (https://github.com/freeCodeCamp/i18n-curriculum.git) registered for path 'curriculum/i18n-curriculum'
+2026-11-19T20:43:17.3775328Z Submodule 'tools/challenge-editor' (https://github.com/freeCodeCamp/challenge-editor.git) registered for path 'tools/challenge-editor'
+2026-11-19T20:43:17.3794891Z Cloning into '/home/runner/work/freecodecamp/freecodecamp/curriculum/i18n-curriculum'...
+2026-11-19T20:43:35.6492160Z Cloning into '/home/runner/work/freecodecamp/freecodecamp/tools/challenge-editor'...
+2026-11-19T20:43:41.3179025Z Submodule path 'curriculum/i18n-curriculum': checked out 'e531fd69a5fa1d0a5d9e33a573c09e6761dbe4c5'
+2026-11-19T20:43:41.3580892Z Submodule path 'tools/challenge-editor': checked out '48b3607cfc037df9767508ec3e8ddbbf32412276'
+2026-11-19T20:43:41.3603638Z [command]/usr/bin/git submodule foreach --recursive git config --local gc.auto 0
+2026-11-19T20:43:41.3780088Z Entering 'curriculum/i18n-curriculum'
+2026-11-19T20:43:41.4085033Z Entering 'tools/challenge-editor'
+2026-11-19T20:43:41.4122578Z ##[endgroup]
+2026-11-19T20:43:41.4161719Z [command]/usr/bin/git log -1 --format=%H
+2026-11-19T20:43:41.4183273Z 27ce39f845fec3b0c5471afaa9349939ece5aef5
+2026-11-19T20:43:41.4189297Z ##[group]Removing auth
+2026-11-19T20:43:41.4189571Z Removing SSH command configuration
+2026-11-19T20:43:41.4191694Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T20:43:41.4215774Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T20:43:41.4390489Z Entering 'curriculum/i18n-curriculum'
+2026-11-19T20:43:41.4679631Z Entering 'tools/challenge-editor'
+2026-11-19T20:43:41.4719117Z Removing HTTP extra header
+2026-11-19T20:43:41.4722056Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T20:43:41.4766140Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T20:43:41.4915041Z Entering 'curriculum/i18n-curriculum'
+2026-11-19T20:43:41.5201180Z Entering 'tools/challenge-editor'
+2026-11-19T20:43:41.5242404Z Removing includeIf entries pointing to credentials config files
+2026-11-19T20:43:41.5245921Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T20:43:41.5269516Z includeif.gitdir:/home/runner/work/freecodecamp/freecodecamp/.git.path
+2026-11-19T20:43:41.5270255Z includeif.gitdir:/home/runner/work/freecodecamp/freecodecamp/.git/worktrees/*.path
+2026-11-19T20:43:41.5270847Z includeif.gitdir:/github/workspace/.git.path
+2026-11-19T20:43:41.5271225Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-19T20:43:41.5276732Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/freecodecamp/freecodecamp/.git.path
+2026-11-19T20:43:41.5295053Z /home/runner/work/_temp/git-credentials-aa2b74ae-db56-4113-916c-9ea9c985c114.config
+2026-11-19T20:43:41.5306062Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/freecodecamp/freecodecamp/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-aa2b74ae\-db56\-4113\-916c\-9ea9c985c114\.config
+2026-11-19T20:43:41.5330732Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/freecodecamp/freecodecamp/.git/worktrees/*.path
+2026-11-19T20:43:41.5349419Z /home/runner/work/_temp/git-credentials-aa2b74ae-db56-4113-916c-9ea9c985c114.config
+2026-11-19T20:43:41.5357229Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/freecodecamp/freecodecamp/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-aa2b74ae\-db56\-4113\-916c\-9ea9c985c114\.config
+2026-11-19T20:43:41.5385897Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-19T20:43:41.5403471Z /github/runner_temp/git-credentials-aa2b74ae-db56-4113-916c-9ea9c985c114.config
+2026-11-19T20:43:41.5408401Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-aa2b74ae\-db56\-4113\-916c\-9ea9c985c114\.config
+2026-11-19T20:43:41.5434745Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-19T20:43:41.5452425Z /github/runner_temp/git-credentials-aa2b74ae-db56-4113-916c-9ea9c985c114.config
+2026-11-19T20:43:41.5456910Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-aa2b74ae\-db56\-4113\-916c\-9ea9c985c114\.config
+2026-11-19T20:43:41.5483975Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T20:43:41.5653524Z Entering 'curriculum/i18n-curriculum'
+2026-11-19T20:43:41.5672499Z file:/home/runner/work/freecodecamp/freecodecamp/.git/modules/curriculum/i18n-curriculum/config	remote.origin.url
+2026-11-19T20:43:41.5938495Z Entering 'tools/challenge-editor'
+2026-11-19T20:43:41.5953740Z file:/home/runner/work/freecodecamp/freecodecamp/.git/modules/tools/challenge-editor/config	remote.origin.url
+2026-11-19T20:43:41.5979537Z [command]/usr/bin/git config --file /home/runner/work/freecodecamp/freecodecamp/.git/modules/curriculum/i18n-curriculum/config --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T20:43:41.6002408Z [command]/usr/bin/git config --file /home/runner/work/freecodecamp/freecodecamp/.git/modules/tools/challenge-editor/config --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T20:43:41.6023151Z Removing credentials config '/home/runner/work/_temp/git-credentials-aa2b74ae-db56-4113-916c-9ea9c985c114.config'
+2026-11-19T20:43:41.6030361Z ##[endgroup]
+2026-11-19T20:43:41.6186486Z ##[group]Run docker build \
+2026-11-19T20:43:41.6186800Z [36;1mdocker build \[0m
+2026-11-19T20:43:41.6187123Z [36;1m  -t fcc-api \[0m
+2026-11-19T20:43:41.6187436Z [36;1m  -f docker/api/Dockerfile .[0m
+2026-11-19T20:43:41.6884670Z shell: /usr/bin/bash -e {0}
+2026-11-19T20:43:41.6885214Z ##[endgroup]
+2026-11-19T20:43:47.0015021Z #0 building with "default" instance using docker driver
+2026-11-19T20:43:47.0015303Z 
+2026-11-19T20:43:47.0015463Z #1 [internal] load build definition from Dockerfile
+2026-11-19T20:43:47.0015959Z #1 transferring dockerfile: 3.22kB done
+2026-11-19T20:43:47.0016334Z #1 DONE 0.0s
+2026-11-19T20:43:47.0016506Z 
+2026-11-19T20:43:47.0017621Z #2 [internal] load metadata for docker.io/library/node:26.13.1-bookworm@sha256:b7087bc4d973034b30854b378ba107f9fab622b47514cb7e2592e41b8bab8d49
+2026-11-19T20:43:47.1983371Z #2 ...
+2026-11-19T20:43:47.1983574Z 
+2026-11-19T20:43:47.1984087Z #3 [auth] library/node:pull token for registry-1.docker.io
+2026-11-19T20:43:47.1984782Z #3 DONE 0.0s
+2026-11-19T20:43:47.3477274Z 
+2026-11-19T20:43:47.3478925Z #2 [internal] load metadata for docker.io/library/node:26.13.1-bookworm@sha256:b7087bc4d973034b30854b378ba107f9fab622b47514cb7e2592e41b8bab8d49
+2026-11-19T20:43:47.6393396Z #2 DONE 0.8s
+2026-11-19T20:43:47.7524807Z 
+2026-11-19T20:43:47.7526673Z #4 [internal] load .dockerignore
+2026-11-19T20:43:47.7528427Z #4 transferring context: 161B done
+2026-11-19T20:43:47.7529118Z #4 DONE 0.0s
+2026-11-19T20:43:47.7529495Z 
+2026-11-19T20:43:47.7530099Z #5 [deps  1/11] FROM docker.io/library/node:26.13.1-bookworm@sha256:b7087bc4d973034b30854b378ba107f9fab622b47514cb7e2592e41b8bab8d49
+2026-11-19T20:43:47.7531271Z #5 resolve docker.io/library/node:26.13.1-bookworm@sha256:b7087bc4d973034b30854b378ba107f9fab622b47514cb7e2592e41b8bab8d49 done
+2026-11-19T20:43:47.7532288Z #5 sha256:b7087bc4d973034b30854b378ba107f9fab622b47514cb7e2592e41b8bab8d49 3.91kB / 3.91kB done
+2026-11-19T20:43:47.7533187Z #5 sha256:d6c30932f8d3f5798b438cce12cdf6cebb1717b52f51e22ff010b4d86667031d 0B / 64.43MB 0.1s
+2026-11-19T20:43:47.7534007Z #5 sha256:69245854ad5855991d16224f6abf55855d2d73922785206adea9c5c5988434a0 0B / 48.53MB 0.1s
+2026-11-19T20:43:47.7534996Z #5 sha256:338554e9113fa6731ba588cb8f45e85b3e3fe7ada531ee7d7b0bc9291d616727 0B / 23.87MB 0.1s
+2026-11-19T20:43:47.7535964Z #5 sha256:6eca1d4ba35cef57a8a41008310420541a2a9ffdcd4883841463ccb39a588bd8 2.31kB / 2.31kB done
+2026-11-19T20:43:47.7536835Z #5 sha256:c3d445c5e470c4bcd8f1f25d2d03bfa568a62f03dffd98c6bf1d2723af80de3e 5.14kB / 5.14kB done
+2026-11-19T20:43:47.8556556Z #5 sha256:69245854ad5855991d16224f6abf55855d2d73922785206adea9c5c5988434a0 39.85MB / 48.53MB 0.2s
+2026-11-19T20:43:47.8557856Z #5 sha256:338554e9113fa6731ba588cb8f45e85b3e3fe7ada531ee7d7b0bc9291d616727 2.10MB / 23.87MB 0.2s
+2026-11-19T20:43:47.9531447Z #5 sha256:d6c30932f8d3f5798b438cce12cdf6cebb1717b52f51e22ff010b4d86667031d 29.36MB / 64.43MB 0.3s
+2026-11-19T20:43:47.9535504Z #5 sha256:69245854ad5855991d16224f6abf55855d2d73922785206adea9c5c5988434a0 48.53MB / 48.53MB 0.3s done
+2026-11-19T20:43:47.9537824Z #5 sha256:338554e9113fa6731ba588cb8f45e85b3e3fe7ada531ee7d7b0bc9291d616727 23.87MB / 23.87MB 0.3s done
+2026-11-19T20:43:47.9539823Z #5 sha256:9bab93d346cda15207e5a5000093cee7256ec1092fb689ec3d2997faf31b9a16 0B / 211.83MB 0.3s
+2026-11-19T20:43:47.9569637Z #5 sha256:da7cacd5ab4c8a5b269611042d1609e01b314dc45b339ce50686e7832c9a7cc7 0B / 3.32kB 0.3s
+2026-11-19T20:43:48.0579161Z #5 sha256:d6c30932f8d3f5798b438cce12cdf6cebb1717b52f51e22ff010b4d86667031d 60.82MB / 64.43MB 0.4s
+2026-11-19T20:43:48.0590798Z #5 sha256:da7cacd5ab4c8a5b269611042d1609e01b314dc45b339ce50686e7832c9a7cc7 3.32kB / 3.32kB 0.4s done
+2026-11-19T20:43:48.0591765Z #5 extracting sha256:69245854ad5855991d16224f6abf55855d2d73922785206adea9c5c5988434a0
+2026-11-19T20:43:48.0592664Z #5 sha256:3c9586d1b83df72b76e29acaac691c72c967f20f0d1f05cd97fe871299b15745 0B / 64.79MB 0.4s
+2026-11-19T20:43:48.1634438Z #5 sha256:d6c30932f8d3f5798b438cce12cdf6cebb1717b52f51e22ff010b4d86667031d 64.43MB / 64.43MB 0.4s done
+2026-11-19T20:43:48.1785132Z #5 sha256:9bab93d346cda15207e5a5000093cee7256ec1092fb689ec3d2997faf31b9a16 41.94MB / 211.83MB 0.5s
+2026-11-19T20:43:48.1791528Z #5 sha256:3c9586d1b83df72b76e29acaac691c72c967f20f0d1f05cd97fe871299b15745 10.49MB / 64.79MB 0.5s
+2026-11-19T20:43:48.1793389Z #5 sha256:a22cb9db545b30b79ba9b5322774b7e7e53f4d46b13339939a0f8d911970da91 0B / 448B 0.5s
+2026-11-19T20:43:48.3309235Z #5 sha256:9bab93d346cda15207e5a5000093cee7256ec1092fb689ec3d2997faf31b9a16 72.35MB / 211.83MB 0.6s
+2026-11-19T20:43:48.3311680Z #5 sha256:3c9586d1b83df72b76e29acaac691c72c967f20f0d1f05cd97fe871299b15745 44.04MB / 64.79MB 0.6s
+2026-11-19T20:43:48.3313799Z #5 sha256:a22cb9db545b30b79ba9b5322774b7e7e53f4d46b13339939a0f8d911970da91 448B / 448B 0.5s done
+2026-11-19T20:43:48.4359957Z #5 sha256:9bab93d346cda15207e5a5000093cee7256ec1092fb689ec3d2997faf31b9a16 113.25MB / 211.83MB 0.7s
+2026-11-19T20:43:48.4370427Z #5 sha256:3c9586d1b83df72b76e29acaac691c72c967f20f0d1f05cd97fe871299b15745 64.79MB / 64.79MB 0.7s done
+2026-11-19T20:43:48.5529464Z #5 sha256:9bab93d346cda15207e5a5000093cee7256ec1092fb689ec3d2997faf31b9a16 169.87MB / 211.83MB 0.9s
+2026-11-19T20:43:48.6599925Z #5 sha256:9bab93d346cda15207e5a5000093cee7256ec1092fb689ec3d2997faf31b9a16 200.28MB / 211.83MB 1.0s
+2026-11-19T20:43:48.7612389Z #5 sha256:9bab93d346cda15207e5a5000093cee7256ec1092fb689ec3d2997faf31b9a16 211.83MB / 211.83MB 1.1s
+2026-11-19T20:43:48.9115917Z #5 sha256:9bab93d346cda15207e5a5000093cee7256ec1092fb689ec3d2997faf31b9a16 211.83MB / 211.83MB 1.1s done
+2026-11-19T20:43:50.7469469Z #5 extracting sha256:69245854ad5855991d16224f6abf55855d2d73922785206adea9c5c5988434a0 2.7s done
+2026-11-19T20:43:51.0519853Z #5 extracting sha256:338554e9113fa6731ba588cb8f45e85b3e3fe7ada531ee7d7b0bc9291d616727
+2026-11-19T20:43:51.8688958Z #5 extracting sha256:338554e9113fa6731ba588cb8f45e85b3e3fe7ada531ee7d7b0bc9291d616727 0.8s done
+2026-11-19T20:43:51.9727745Z #5 extracting sha256:d6c30932f8d3f5798b438cce12cdf6cebb1717b52f51e22ff010b4d86667031d
+2026-11-19T20:43:55.2871827Z #5 extracting sha256:d6c30932f8d3f5798b438cce12cdf6cebb1717b52f51e22ff010b4d86667031d 3.3s done
+2026-11-19T20:43:55.7035733Z #5 extracting sha256:9bab93d346cda15207e5a5000093cee7256ec1092fb689ec3d2997faf31b9a16
+2026-11-19T20:43:57.6493403Z #5 ...
+2026-11-19T20:43:57.6493812Z 
+2026-11-19T20:43:57.6494821Z #6 [internal] load build context
+2026-11-19T20:43:57.6495521Z #6 transferring context: 400.48MB 10.0s
+2026-11-19T20:43:57.7551987Z #6 ...
+2026-11-19T20:43:57.7552594Z 
+2026-11-19T20:43:57.7555439Z #5 [deps  1/11] FROM docker.io/library/node:26.13.1-bookworm@sha256:b7087bc4d973034b30854b378ba107f9fab622b47514cb7e2592e41b8bab8d49
+2026-11-19T20:44:00.7632258Z #5 extracting sha256:9bab93d346cda15207e5a5000093cee7256ec1092fb689ec3d2997faf31b9a16 5.1s
+2026-11-19T20:44:02.9117447Z #5 extracting sha256:9bab93d346cda15207e5a5000093cee7256ec1092fb689ec3d2997faf31b9a16 7.2s done
+2026-11-19T20:44:02.9120604Z #5 extracting sha256:da7cacd5ab4c8a5b269611042d1609e01b314dc45b339ce50686e7832c9a7cc7
+2026-11-19T20:44:03.0352208Z #5 extracting sha256:da7cacd5ab4c8a5b269611042d1609e01b314dc45b339ce50686e7832c9a7cc7 done
+2026-11-19T20:44:03.0353314Z #5 extracting sha256:3c9586d1b83df72b76e29acaac691c72c967f20f0d1f05cd97fe871299b15745 0.1s
+2026-11-19T20:44:05.8267170Z #5 extracting sha256:3c9586d1b83df72b76e29acaac691c72c967f20f0d1f05cd97fe871299b15745 2.8s done
+2026-11-19T20:44:05.8268639Z #5 extracting sha256:a22cb9db545b30b79ba9b5322774b7e7e53f4d46b13339939a0f8d911970da91
+2026-11-19T20:44:05.9977475Z #5 extracting sha256:a22cb9db545b30b79ba9b5322774b7e7e53f4d46b13339939a0f8d911970da91 done
+2026-11-19T20:44:05.9978417Z #5 DONE 18.2s
+2026-11-19T20:44:05.9978730Z 
+2026-11-19T20:44:05.9979042Z #6 [internal] load build context
+2026-11-19T20:44:05.9979521Z #6 transferring context: 768.55MB 18.1s
+2026-11-19T20:44:06.2625720Z #6 transferring context: 772.80MB 18.5s done
+2026-11-19T20:44:06.2626615Z #6 ...
+2026-11-19T20:44:06.2627072Z 
+2026-11-19T20:44:06.2627709Z #7 [deps  2/11] RUN apt-get update && apt-get install -y jq
+2026-11-19T20:44:06.2628655Z #7 0.263 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+2026-11-19T20:44:06.2629357Z #7 0.282 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+2026-11-19T20:44:06.2629925Z #7 0.291 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [34.8 kB]
+2026-11-19T20:44:06.2630508Z #7 0.329 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8790 kB]
+2026-11-19T20:44:06.2631073Z #7 0.416 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
+2026-11-19T20:44:06.4340281Z #7 0.437 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [376 kB]
+2026-11-19T20:44:06.8361318Z #7 ...
+2026-11-19T20:44:06.8361667Z 
+2026-11-19T20:44:06.8362346Z #6 [internal] load build context
+2026-11-19T20:44:06.8362836Z #6 DONE 19.2s
+2026-11-19T20:44:06.9864896Z 
+2026-11-19T20:44:06.9865843Z #8 [stage-2 2/8] WORKDIR /home/node/fcc
+2026-11-19T20:44:11.0699742Z #8 ...
+2026-11-19T20:44:11.0699964Z 
+2026-11-19T20:44:11.0700234Z #7 [deps  2/11] RUN apt-get update && apt-get install -y jq
+2026-11-19T20:44:11.0700618Z #7 1.193 Fetched 9415 kB in 1s (10.0 MB/s)
+2026-11-19T20:44:11.0700926Z #7 1.193 Reading package lists...
+2026-11-19T20:44:11.0701183Z #7 1.586 Reading package lists...
+2026-11-19T20:44:11.0701472Z #7 2.002 Building dependency tree...
+2026-11-19T20:44:11.0701786Z #7 2.113 Reading state information...
+2026-11-19T20:44:11.0702080Z #7 2.228 The following additional packages will be installed:
+2026-11-19T20:44:11.0702456Z #7 2.228   libjq1 libonig5
+2026-11-19T20:44:11.0702741Z #7 2.249 The following NEW packages will be installed:
+2026-11-19T20:44:11.0703045Z #7 2.249   jq libjq1 libonig5
+2026-11-19T20:44:11.0703363Z #7 2.275 0 upgraded, 3 newly installed, 0 to remove and 3 not upgraded.
+2026-11-19T20:44:11.0703703Z #7 2.275 Need to get 389 kB of archives.
+2026-11-19T20:44:11.0704042Z #7 2.275 After this operation, 1170 kB of additional disk space will be used.
+2026-11-19T20:44:11.0704761Z #7 2.275 Get:1 http://deb.debian.org/debian bookworm/main amd64 libonig5 amd64 6.9.8-1 [188 kB]
+2026-11-19T20:44:11.0705347Z #7 2.306 Get:2 http://deb.debian.org/debian-security bookworm-security/main amd64 libjq1 amd64 1.6-2.1+deb12u3 [136 kB]
+2026-11-19T20:44:11.0705946Z #7 2.313 Get:3 http://deb.debian.org/debian-security bookworm-security/main amd64 jq amd64 1.6-2.1+deb12u3 [64.4 kB]
+2026-11-19T20:44:11.0706442Z #7 2.468 debconf: delaying package configuration, since apt-utils is not installed
+2026-11-19T20:44:11.0706803Z #7 2.505 Fetched 389 kB in 0s (6555 kB/s)
+2026-11-19T20:44:11.0707113Z #7 2.610 Selecting previously unselected package libonig5:amd64.
+2026-11-19T20:44:11.0707435Z #7 2.610 (Reading database ... 
+2026-11-19T20:44:11.0707711Z (Reading database ... 5%
+2026-11-19T20:44:11.0707986Z (Reading database ... 10%
+2026-11-19T20:44:11.0708235Z (Reading database ... 15%
+2026-11-19T20:44:11.0708494Z (Reading database ... 20%
+2026-11-19T20:44:11.0708731Z (Reading database ... 25%
+2026-11-19T20:44:11.0708983Z (Reading database ... 30%
+2026-11-19T20:44:11.0709214Z (Reading database ... 35%
+2026-11-19T20:44:11.0709447Z (Reading database ... 40%
+2026-11-19T20:44:11.0709691Z (Reading database ... 45%
+2026-11-19T20:44:11.0709944Z (Reading database ... 50%
+2026-11-19T20:44:11.0710198Z (Reading database ... 55%
+2026-11-19T20:44:11.0710461Z (Reading database ... 60%
+2026-11-19T20:44:11.0710723Z (Reading database ... 65%
+2026-11-19T20:44:11.0710989Z (Reading database ... 70%
+2026-11-19T20:44:11.0711226Z (Reading database ... 75%
+2026-11-19T20:44:11.0711467Z (Reading database ... 80%
+2026-11-19T20:44:11.0711696Z (Reading database ... 85%
+2026-11-19T20:44:11.0711913Z (Reading database ... 90%
+2026-11-19T20:44:11.0712162Z (Reading database ... 95%
+2026-11-19T20:44:11.0712783Z (Reading database ... 100%
+2026-11-19T20:44:11.0713095Z (Reading database ... 23259 files and directories currently installed.)
+2026-11-19T20:44:11.0713527Z #7 2.621 Preparing to unpack .../libonig5_6.9.8-1_amd64.deb ...
+2026-11-19T20:44:11.0713928Z #7 2.700 Unpacking libonig5:amd64 (6.9.8-1) ...
+2026-11-19T20:44:11.0714460Z #7 2.931 Selecting previously unselected package libjq1:amd64.
+2026-11-19T20:44:11.0714834Z #7 2.931 Preparing to unpack .../libjq1_1.6-2.1+deb12u3_amd64.deb ...
+2026-11-19T20:44:11.0715177Z #7 2.942 Unpacking libjq1:amd64 (1.6-2.1+deb12u3) ...
+2026-11-19T20:44:11.0715495Z #7 3.039 Selecting previously unselected package jq.
+2026-11-19T20:44:11.0715822Z #7 3.042 Preparing to unpack .../jq_1.6-2.1+deb12u3_amd64.deb ...
+2026-11-19T20:44:11.0716160Z #7 3.054 Unpacking jq (1.6-2.1+deb12u3) ...
+2026-11-19T20:44:11.0716468Z #7 3.153 Setting up libonig5:amd64 (6.9.8-1) ...
+2026-11-19T20:44:11.0716779Z #7 3.274 Setting up libjq1:amd64 (1.6-2.1+deb12u3) ...
+2026-11-19T20:44:11.0717093Z #7 3.389 Setting up jq (1.6-2.1+deb12u3) ...
+2026-11-19T20:44:11.0717405Z #7 3.423 Processing triggers for libc-bin (2.36-9+deb12u14) ...
+2026-11-19T20:44:12.8549411Z #7 DONE 7.0s
+2026-11-19T20:44:12.8549943Z 
+2026-11-19T20:44:12.8550117Z #8 [stage-2 2/8] WORKDIR /home/node/fcc
+2026-11-19T20:44:13.0288413Z #8 DONE 7.0s
+2026-11-19T20:44:13.0289339Z 
+2026-11-19T20:44:13.0289626Z #9 [deps  3/11] WORKDIR /home/node/build
+2026-11-19T20:44:13.0290007Z #9 DONE 0.0s
+2026-11-19T20:44:13.0290228Z 
+2026-11-19T20:44:13.0290485Z #10 [deps  4/11] COPY --chown=node:node pnpm*.yaml .
+2026-11-19T20:44:13.5799511Z #10 DONE 0.7s
+2026-11-19T20:44:13.5799746Z 
+2026-11-19T20:44:13.5800684Z #11 [builder  3/14] RUN --mount=type=bind,source=package.json,target=/tmp/package.json     npm i -g "pnpm@$(node -p 'require("/tmp/package.json").packageManager.split("@")[1]')"
+2026-11-19T20:44:13.7753642Z #11 ...
+2026-11-19T20:44:13.7753936Z 
+2026-11-19T20:44:13.7754164Z #12 [deps  5/11] COPY --chown=node:node package.json .
+2026-11-19T20:44:13.7755082Z #12 DONE 0.0s
+2026-11-19T20:44:13.7755279Z 
+2026-11-19T20:44:13.7755486Z #13 [deps  6/11] COPY --chown=node:node api/ api/
+2026-11-19T20:44:13.7755928Z #13 DONE 0.0s
+2026-11-19T20:44:13.7756074Z 
+2026-11-19T20:44:13.7756334Z #14 [deps  7/11] COPY --chown=node:node packages/ packages/
+2026-11-19T20:44:13.7756760Z #14 DONE 0.0s
+2026-11-19T20:44:13.9256040Z 
+2026-11-19T20:44:13.9256961Z #15 [deps  8/11] RUN npm i -g "pnpm@$(node -p 'require("./package.json").packageManager.split("@")[1]')"
+2026-11-19T20:44:14.7486005Z #15 ...
+2026-11-19T20:44:14.7486310Z 
+2026-11-19T20:44:14.7487040Z #11 [builder  3/14] RUN --mount=type=bind,source=package.json,target=/tmp/package.json     npm i -g "pnpm@$(node -p 'require("/tmp/package.json").packageManager.split("@")[1]')"
+2026-11-19T20:44:14.7488042Z #11 1.646 
+2026-11-19T20:44:14.7488340Z #11 1.646 added 2 packages in 1s
+2026-11-19T20:44:14.7488892Z #11 1.647 npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+2026-11-19T20:44:14.7489700Z #11 1.647 npm warn install-scripts   pnpm@12.20.0 (preinstall: node install.js; postinstall: node install.js)
+2026-11-19T20:44:14.7490265Z #11 1.647 npm warn install-scripts
+2026-11-19T20:44:14.7491267Z #11 1.647 npm warn install-scripts Run `npm install -g --allow-scripts=pnpm` to allow these scripts once, or `npm config set allow-scripts=pnpm --location=user` to allow them for all global installs.
+2026-11-19T20:44:14.7492175Z #11 1.649 npm notice
+2026-11-19T20:44:14.7492593Z #11 1.649 npm notice New major version of npm available! 11.20.0 -> 12.2.3
+2026-11-19T20:44:14.7493199Z #11 1.649 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.3
+2026-11-19T20:44:14.7493744Z #11 1.649 npm notice To update run: npm install -g npm@12.2.3
+2026-11-19T20:44:14.7494138Z #11 1.649 npm notice
+2026-11-19T20:44:14.7494645Z #11 DONE 1.7s
+2026-11-19T20:44:14.7494825Z 
+2026-11-19T20:44:14.7494982Z #16 [builder  4/14] WORKDIR /home/node/build
+2026-11-19T20:44:14.7495353Z #16 DONE 0.0s
+2026-11-19T20:44:14.8988376Z 
+2026-11-19T20:44:14.8989574Z #17 [builder  5/14] COPY --chown=node:node *.* .
+2026-11-19T20:44:15.3875630Z #17 DONE 0.8s
+2026-11-19T20:44:15.3875841Z 
+2026-11-19T20:44:15.3876652Z #15 [deps  8/11] RUN npm i -g "pnpm@$(node -p 'require("./package.json").packageManager.split("@")[1]')"
+2026-11-19T20:44:15.3877142Z #15 1.614 
+2026-11-19T20:44:15.3877401Z #15 1.614 added 2 packages in 1s
+2026-11-19T20:44:15.3877926Z #15 1.615 npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+2026-11-19T20:44:15.3878687Z #15 1.615 npm warn install-scripts   pnpm@12.20.0 (preinstall: node install.js; postinstall: node install.js)
+2026-11-19T20:44:15.3879342Z #15 1.615 npm warn install-scripts
+2026-11-19T20:44:15.3880145Z #15 1.615 npm warn install-scripts Run `npm install -g --allow-scripts=pnpm` to allow these scripts once, or `npm config set allow-scripts=pnpm --location=user` to allow them for all global installs.
+2026-11-19T20:44:15.3880913Z #15 1.616 npm notice
+2026-11-19T20:44:15.3881440Z #15 1.616 npm notice New major version of npm available! 11.20.0 -> 12.2.3
+2026-11-19T20:44:15.3882055Z #15 1.616 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.3
+2026-11-19T20:44:15.3882646Z #15 1.616 npm notice To update run: npm install -g npm@12.2.3
+2026-11-19T20:44:15.3883204Z #15 1.616 npm notice
+2026-11-19T20:44:15.3883588Z #15 DONE 1.7s
+2026-11-19T20:44:15.3883778Z 
+2026-11-19T20:44:15.3884115Z #18 [deps  9/11] RUN pnpm config set --location=project dedupe-peer-dependents false
+2026-11-19T20:44:15.6115957Z #18 DONE 0.1s
+2026-11-19T20:44:15.6116203Z 
+2026-11-19T20:44:15.6116818Z #19 [builder  6/14] COPY --chown=node:node api/ api/
+2026-11-19T20:44:15.6117284Z #19 DONE 0.0s
+2026-11-19T20:44:15.6117492Z 
+2026-11-19T20:44:15.6117681Z #20 [builder  7/14] COPY --chown=node:node packages/ packages/
+2026-11-19T20:44:15.6118105Z #20 DONE 0.0s
+2026-11-19T20:44:15.6118324Z 
+2026-11-19T20:44:15.6118825Z #21 [builder  8/14] COPY --chown=node:node tools/ tools/
+2026-11-19T20:44:15.6119439Z #21 DONE 0.0s
+2026-11-19T20:44:15.6119648Z 
+2026-11-19T20:44:15.6119833Z #22 [builder  9/14] COPY --chown=node:node curriculum/ curriculum/
+2026-11-19T20:44:21.3755061Z #22 ...
+2026-11-19T20:44:21.3755708Z 
+2026-11-19T20:44:21.3756457Z #23 [deps 10/11] RUN pnpm install --prod --ignore-scripts -F=api -F=packages/shared --frozen-lockfile
+2026-11-19T20:44:21.3757482Z #23 0.220 ? Verifying lockfile against supply-chain policies (2618 entries)...
+2026-11-19T20:44:21.3758482Z #23 0.340 Update available! 12.20.0 → 12.21.0.
+2026-11-19T20:44:21.3759012Z #23 0.340 Changelog: https://pnpm.io/v/12.21.0
+2026-11-19T20:44:21.3759620Z #23 0.340 To update, run: curl -fsSL https://get.pnpm.io/install.sh | sh -
+2026-11-19T20:44:21.3760349Z #23 4.950 ✓ Lockfile passes supply-chain policies (2618 entries in 4.7s)
+2026-11-19T20:44:21.3760963Z #23 4.950 Lockfile is up to date, resolution step is skipped
+2026-11-19T20:44:21.3766437Z #23 5.050 Downloading @prisma/client@6.19.3: 0.00 B/27.25 MB
+2026-11-19T20:44:21.3767029Z #23 5.051 Packages are hard linked from the content-addressable store to the virtual store.
+2026-11-19T20:44:21.3767600Z #23 5.051   Content-addressable store is at: /root/.local/share/pnpm/store/v11
+2026-11-19T20:44:21.3768062Z #23 5.051   Virtual store is at:             node_modules/.pnpm
+2026-11-19T20:44:21.4448722Z #23 6.021 Packages: +203
+2026-11-19T20:44:21.4449962Z #23 6.021 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-11-19T20:44:21.5758461Z #23 6.027 Progress: resolved 203, reused 0, downloaded 203, added 203, done
+2026-11-19T20:44:21.5759000Z #23 6.151 
+2026-11-19T20:44:21.5759432Z #23 6.151 dependencies:
+2026-11-19T20:44:21.5759789Z #23 6.151 + dotenv 16.6.1
+2026-11-19T20:44:21.5760143Z #23 6.151 
+2026-11-19T20:44:21.7579658Z #23 6.334 Done in 6.2s using pnpm v12.20.0
+2026-11-19T20:44:31.0504907Z #23 DONE 15.6s
+2026-11-19T20:44:31.0505114Z 
+2026-11-19T20:44:31.0505528Z #22 [builder  9/14] COPY --chown=node:node curriculum/ curriculum/
+2026-11-19T20:44:31.2032374Z #22 DONE 15.6s
+2026-11-19T20:44:31.2032702Z 
+2026-11-19T20:44:31.2033145Z #24 [builder 10/14] COPY --chown=node:node client/ client/
+2026-11-19T20:44:31.2033853Z #24 DONE 0.1s
+2026-11-19T20:44:31.2034033Z 
+2026-11-19T20:44:31.2035581Z #25 [deps 11/11] RUN cd api && pnpm dlx prisma@$(jq -r '.devDependencies.prisma' < package.json) generate
+2026-11-19T20:44:31.3333538Z #25 ...
+2026-11-19T20:44:31.3333750Z 
+2026-11-19T20:44:31.3334059Z #26 [builder 11/14] RUN pnpm config set --location=project dedupe-peer-dependents false
+2026-11-19T20:44:31.3334789Z #26 DONE 0.1s
+2026-11-19T20:44:31.4847014Z 
+2026-11-19T20:44:31.4848157Z #27 [builder 12/14] RUN pnpm install --frozen-lockfile --ignore-scripts
+2026-11-19T20:44:31.4906888Z #27 0.156 Scope: all 15 workspace projects
+2026-11-19T20:44:31.6258600Z #27 0.217 [WARN] Unsupported engine for gatsby-plugin-page-creator@5.16.0: wanted: {"node":">=18.0.0 <26"} (current: {"node":"26.13.1"})
+2026-11-19T20:44:31.6259563Z #27 0.217 [WARN] Unsupported engine for gatsby-plugin-react-helmet@6.16.0: wanted: {"node":">=18.0.0 <26"} (current: {"node":"26.13.1"})
+2026-11-19T20:44:31.6260558Z #27 0.217 [WARN] Unsupported engine for gatsby-page-utils@3.16.0: wanted: {"node":">=18.0.0 <26"} (current: {"node":"26.13.1"})
+2026-11-19T20:44:31.6262435Z #27 0.217 [WARN] Unsupported engine for gatsby@5.16.1: wanted: {"node":">=18.0.0 <26"} (current: {"node":"26.13.1"})
+2026-11-19T20:44:31.6263363Z #27 0.217 [WARN] Unsupported engine for babel-preset-gatsby@3.16.0: wanted: {"node":">=18.0.0 <26"} (current: {"node":"26.13.1"})
+2026-11-19T20:44:31.6264664Z #27 0.217 [WARN] Unsupported engine for gatsby-worker@2.16.0: wanted: {"node":">=18.0.0 <26"} (current: {"node":"26.13.1"})
+2026-11-19T20:44:31.6266399Z #27 0.218 [WARN] Unsupported engine for @gatsbyjs/parcel-namer-relative-to-cwd@2.16.0: wanted: {"node":">=18.0.0 <26"} (current: {"node":"26.13.1"})
+2026-11-19T20:44:31.6267350Z #27 0.218 [WARN] Unsupported engine for babel-plugin-remove-graphql-queries@5.16.0: wanted: {"node":">=18.0.0 <26"} (current: {"node":"26.13.1"})
+2026-11-19T20:44:31.6268331Z #27 0.218 [WARN] Unsupported engine for gatsby-plugin-typescript@5.16.0: wanted: {"node":">=18.0.0 <26"} (current: {"node":"26.13.1"})
+2026-11-19T20:44:31.6269070Z #27 0.218 [WARN] Unsupported engine for gatsby-transformer-remark@6.16.0: wanted: {"node":">=18.0.0 <26"} (current: {"node":"26.13.1"})
+2026-11-19T20:44:31.6269686Z #27 0.218 [WARN] Unsupported engine for gatsby-plugin-utils@4.16.0: wanted: {"node":">=18.0.0 <26"} (current: {"node":"26.13.1"})
+2026-11-19T20:44:31.6270395Z #27 0.218 [WARN] Unsupported engine for gatsby-core-utils@4.16.0: wanted: {"node":">=18.0.0 <26"} (current: {"node":"26.13.1"})
+2026-11-19T20:44:31.6271060Z #27 0.218 [WARN] Unsupported engine for gatsby-link@5.16.0: wanted: {"node":">=18.0.0 <26"} (current: {"node":"26.13.1"})
+2026-11-19T20:44:31.6271709Z #27 0.218 [WARN] Unsupported engine for gatsby-react-router-scroll@6.16.0: wanted: {"node":">=18.0.0 <26"} (current: {"node":"26.13.1"})
+2026-11-19T20:44:31.6272332Z #27 0.219 [WARN] Unsupported engine for gatsby-plugin-postcss@6.16.0: wanted: {"node":">=18.0.0 <26"} (current: {"node":"26.13.1"})
+2026-11-19T20:44:31.6272917Z #27 0.219 [WARN] Unsupported engine for gatsby-script@2.16.0: wanted: {"node":">=18.0.0 <26"} (current: {"node":"26.13.1"})
+2026-11-19T20:44:31.6273518Z #27 0.219 [WARN] Unsupported engine for gatsby-source-filesystem@5.16.0: wanted: {"node":">=18.0.0 <26"} (current: {"node":"26.13.1"})
+2026-11-19T20:44:31.6274108Z #27 0.219 [WARN] Unsupported engine for gatsby-sharp@1.16.0: wanted: {"node":">=18.0.0 <26"} (current: {"node":"26.13.1"})
+2026-11-19T20:44:31.6274928Z #27 0.219 [WARN] Unsupported engine for gatsby-cli@5.16.0: wanted: {"node":">=18.0.0 <26"} (current: {"node":"26.13.1"})
+2026-11-19T20:44:31.6275752Z #27 0.241 ? Verifying lockfile against supply-chain policies (2618 entries)...
+2026-11-19T20:44:31.6276650Z #27 0.291 Update available! 12.20.0 → 12.21.0.
+2026-11-19T20:44:31.6278653Z #27 0.291 Changelog: https://pnpm.io/v/12.21.0
+2026-11-19T20:44:31.6279501Z #27 0.291 To update, run: curl -fsSL https://get.pnpm.io/install.sh | sh -
+2026-11-19T20:44:31.8187349Z #27 0.333 Packages are hard linked from the content-addressable store to the virtual store.
+2026-11-19T20:44:31.8188580Z #27 0.333   Content-addressable store is at: /home/node/.local/share/pnpm/store/v11
+2026-11-19T20:44:31.8189101Z #27 0.333   Virtual store is at:             node_modules/.pnpm
+2026-11-19T20:44:31.8638311Z #27 0.529 Downloading @oxlint/binding-linux-x64-gnu@1.93.0: 0.00 B/6.64 MB
+2026-11-19T20:44:32.0373754Z #27 0.703 Downloading @rolldown/binding-linux-x64-gnu@1.0.0-rc.17: 0.00 B/9.39 MB
+2026-11-19T20:44:32.2531420Z #27 0.919 Downloading @oxlint-tsgolint/linux-x64@7.0.2006: 0.00 B/7.83 MB
+2026-11-19T20:44:33.2637479Z #27 1.929 Progress: resolved 2473, reused 0, downloaded 563, added 562
+2026-11-19T20:44:34.3555120Z #27 2.937 Progress: resolved 2473, reused 0, downloaded 850, added 856
+2026-11-19T20:44:34.5722132Z #27 3.238 Downloading @codesandbox/sandpack-client@2.19.8: 0.00 B/17.77 MB
+2026-11-19T20:44:35.0967510Z #27 3.762 Downloading @turbo/linux-64@2.11.7: 0.00 B/17.62 MB
+2026-11-19T20:44:35.5362072Z #27 4.051 Downloading @babel/standalone@7.29.14: 0.00 B/5.55 MB
+2026-11-19T20:44:35.5835849Z #27 4.247 Downloading @parcel/transformer-js@2.8.3: 0.00 B/48.43 MB
+2026-11-19T20:44:35.8691823Z #27 4.535 Downloading @prisma/client@6.19.3: 0.00 B/27.25 MB
+2026-11-19T20:44:36.5134958Z #27 5.179 Downloading @typescript/typescript-linux-x64@7.0.2: 0.00 B/9.66 MB
+2026-11-19T20:44:36.7246564Z #27 5.218 Downloading monaco-editor@0.55.1: 0.00 B/13.67 MB
+2026-11-19T20:44:36.7247831Z #27 5.239 Downloading prisma@6.19.3: 0.00 B/17.62 MB
+2026-11-19T20:44:37.5755953Z #27 6.241 Progress: resolved 2473, reused 0, downloaded 1285, added 1298
+2026-11-19T20:44:38.5761363Z #27 7.242 Progress: resolved 2473, reused 0, downloaded 1556, added 1568
+2026-11-19T20:44:39.0471288Z #27 7.713 ✓ Lockfile passes supply-chain policies (2618 entries in 7.5s)
+2026-11-19T20:44:39.0472231Z #27 7.713 Lockfile is up to date, resolution step is skipped
+2026-11-19T20:44:40.0521746Z #27 8.718 Progress: resolved 2473, reused 0, downloaded 2161, added 2130
+2026-11-19T20:44:41.0555662Z #27 9.721 Progress: resolved 2473, reused 0, downloaded 2455, added 2472
+2026-11-19T20:44:41.2500719Z #27 9.766 Packages: +2473
+2026-11-19T20:44:41.2501221Z #27 9.766 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-11-19T20:44:41.2501989Z #27 9.916 Progress: resolved 2473, reused 0, downloaded 2455, added 2473, done
+2026-11-19T20:44:41.5168203Z #27 10.18 
+2026-11-19T20:44:41.5168662Z #27 10.18 dependencies:
+2026-11-19T20:44:41.5168933Z #27 10.18 + dotenv 16.6.1
+2026-11-19T20:44:41.5169610Z #27 10.18 
+2026-11-19T20:44:41.5169864Z #27 10.18 devDependencies:
+2026-11-19T20:44:41.5170228Z #27 10.18 + @freecodecamp/oxlint-config <- packages/oxlint-config
+2026-11-19T20:44:41.5170593Z #27 10.18 + @freecodecamp/shared <- packages/shared
+2026-11-19T20:44:41.5170913Z #27 10.18 + @playwright/test 1.65.0
+2026-11-19T20:44:41.5171207Z #27 10.18 + @testing-library/dom 10.4.2
+2026-11-19T20:44:41.5171511Z #27 10.18 + @testing-library/jest-dom 6.9.1
+2026-11-19T20:44:41.5171784Z #27 10.18 + @types/lodash 4.17.24
+2026-11-19T20:44:41.5172042Z #27 10.18 + @types/node 26.6.6
+2026-11-19T20:44:41.5172293Z #27 10.18 + debug 4.4.3
+2026-11-19T20:44:41.5172541Z #27 10.18 + husky 9.1.7
+2026-11-19T20:44:41.5172806Z #27 10.18 + identity-obj-proxy 3.0.0
+2026-11-19T20:44:41.5173055Z #27 10.18 + js-yaml 3.15.2
+2026-11-19T20:44:41.5173288Z #27 10.18 + lint-staged 16.4.0
+2026-11-19T20:44:41.5173552Z #27 10.18 + lodash 4.18.1
+2026-11-19T20:44:41.5173771Z #27 10.18 + npm-run-all2 5.0.2
+2026-11-19T20:44:41.5174085Z #27 10.18 + oxlint 1.93.0
+2026-11-19T20:44:41.5174544Z #27 10.18 + oxlint-tsgolint 7.0.2006
+2026-11-19T20:44:41.5174809Z #27 10.18 + prettier 3.10.1
+2026-11-19T20:44:41.5175056Z #27 10.18 + stylelint 16.26.1
+2026-11-19T20:44:41.5175287Z #27 10.18 + tsx 4.23.15
+2026-11-19T20:44:41.5175530Z #27 10.18 + turbo 2.11.7
+2026-11-19T20:44:41.5175777Z #27 10.18 + typescript 7.0.2
+2026-11-19T20:44:41.5176302Z #27 10.18 + webpack-bundle-analyzer 4.10.2
+2026-11-19T20:44:41.5176568Z #27 10.18 + yargs 17.7.2
+2026-11-19T20:44:41.5176780Z #27 10.18 
+2026-11-19T20:44:41.7961606Z #27 10.46 Done in 10.3s using pnpm v12.20.0
+2026-11-19T20:44:42.3966499Z #27 ...
+2026-11-19T20:44:42.3966705Z 
+2026-11-19T20:44:49.3499979Z #25 [deps 11/11] RUN cd api && pnpm dlx prisma@$(jq -r '.devDependencies.prisma' < package.json) generate
+2026-11-19T20:44:49.3500679Z #25 1.248 Downloading prisma@6.19.3: 0.00 B/17.62 MB
+2026-11-19T20:44:49.3501147Z #25 2.849 Packages are hard linked from the content-addressable store to the virtual store.
+2026-11-19T20:44:49.3501632Z #25 2.849   Content-addressable store is at: /root/.local/share/pnpm/store/v11
+2026-11-19T20:44:49.3502220Z #25 2.849   Virtual store is at:             ../../../../root/.cache/pnpm/dlx/3dd4d3c83c204f460a4436a8d8fba766/mwo0qjcc-7/node_modules/.pnpm
+2026-11-19T20:44:49.3502850Z #25 3.029 .../mwo0qjcc-7                           | Progress: resolved 35, reused 1, downloaded 34, added 35, done
+2026-11-19T20:44:49.3503413Z #25 3.031 .../prisma@6.19.3/node_modules/prisma preinstall$ node scripts/preinstall-entry.js
+2026-11-19T20:44:49.3503830Z #25 3.132 .../prisma@6.19.3/node_modules/prisma preinstall: Done
+2026-11-19T20:44:49.3504191Z #25 3.304 Ignored build scripts: @prisma/engines@6.19.3.
+2026-11-19T20:44:49.3504779Z #25 3.304 Run "pnpm approve-builds" to pick which dependencies should be allowed to run scripts.
+2026-11-19T20:44:49.3505183Z #25 3.333 
+2026-11-19T20:44:49.3505393Z #25 3.333 dependencies:
+2026-11-19T20:44:49.3505636Z #25 3.333 + prisma 6.19.3
+2026-11-19T20:44:49.3505862Z #25 3.333 
+2026-11-19T20:44:49.3506119Z #25 4.264 Loaded Prisma config from prisma.config.ts.
+2026-11-19T20:44:49.3506406Z #25 4.264 
+2026-11-19T20:44:49.3506678Z #25 5.881 Prisma config detected, skipping environment variable loading.
+2026-11-19T20:44:49.3507032Z #25 5.891 Prisma schema loaded from prisma
+2026-11-19T20:44:49.3507295Z #25 7.818 
+2026-11-19T20:44:49.3508192Z #25 7.818 ✔ Generated Prisma Client (v6.19.3) to ./../node_modules/.pnpm/@prisma+client@6.19.3_prisma@6.19.3_typescript@7.0.2__typescript@7.0.2/node_modules/@prisma/client in 592ms
+2026-11-19T20:44:49.3508732Z #25 7.818 
+2026-11-19T20:44:49.3509053Z #25 7.818 Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+2026-11-19T20:44:49.3509433Z #25 7.818 
+2026-11-19T20:44:49.3509833Z #25 7.818 Tip: Need your database queries to be 1000x faster? Accelerate offers you that and more: https://pris.ly/tip-2-accelerate
+2026-11-19T20:44:49.3510263Z #25 7.818 
+2026-11-19T20:44:49.3510505Z #25 7.877 Done in 7.7s using pnpm v12.20.0
+2026-11-19T20:44:49.3510758Z #25 DONE 18.3s
+2026-11-19T20:44:49.3510901Z 
+2026-11-19T20:44:49.3511140Z #27 [builder 12/14] RUN pnpm install --frozen-lockfile --ignore-scripts
+2026-11-19T20:44:49.4752125Z #27 DONE 18.0s
+2026-11-19T20:44:49.4752810Z 
+2026-11-19T20:44:49.4755272Z #28 [builder 13/14] RUN cd api && pnpm prisma generate
+2026-11-19T20:44:49.4755907Z #28 0.119 $ dotenv -e ../.env prisma generate
+2026-11-19T20:44:50.1682893Z #28 0.812 Loaded Prisma config from prisma.config.ts.
+2026-11-19T20:44:50.1683806Z #28 0.812 
+2026-11-19T20:44:50.8314848Z #28 1.475 Prisma config detected, skipping environment variable loading.
+2026-11-19T20:44:50.9831355Z #28 1.476 Prisma schema loaded from prisma
+2026-11-19T20:44:51.3390070Z #28 1.983 
+2026-11-19T20:44:51.3391424Z #28 1.983 ✔ Generated Prisma Client (v6.19.3) to ./../node_modules/.pnpm/@prisma+client@6.19.3_prisma@6.19.3_typescript@7.0.2__typescript@7.0.2/node_modules/@prisma/client in 95ms
+2026-11-19T20:44:51.3392132Z #28 1.983 
+2026-11-19T20:44:51.3392579Z #28 1.983 Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+2026-11-19T20:44:51.3393109Z #28 1.983 
+2026-11-19T20:44:51.3393674Z #28 1.983 Tip: Need your database queries to be 1000x faster? Accelerate offers you that and more: https://pris.ly/tip-2-accelerate
+2026-11-19T20:44:51.3394500Z #28 1.983 
+2026-11-19T20:44:51.4966095Z #28 DONE 2.0s
+2026-11-19T20:44:51.4966415Z 
+2026-11-19T20:44:51.4966760Z #29 [builder 14/14] RUN pnpm turbo -F=@freecodecamp/api build
+2026-11-19T20:44:51.4967088Z #29 0.133 
+2026-11-19T20:44:51.4967326Z #29 0.133 Attention:
+2026-11-19T20:44:51.4967980Z #29 0.133 Turborepo now collects completely anonymous telemetry regarding usage.
+2026-11-19T20:44:51.4968477Z #29 0.133 This information is used to shape the Turborepo roadmap and prioritize features.
+2026-11-19T20:44:51.4969107Z #29 0.133 You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+2026-11-19T20:44:51.4969639Z #29 0.133 https://turborepo.dev/docs/telemetry
+2026-11-19T20:44:51.4969970Z #29 0.133 
+2026-11-19T20:44:51.6855609Z #29 0.172 
+2026-11-19T20:44:51.6856317Z #29 0.172    • turbo 2.11.7
+2026-11-19T20:44:51.6856965Z #29 0.172    • Packages in scope: @freecodecamp/api
+2026-11-19T20:44:51.6857657Z #29 0.172    • Running build in 1 package
+2026-11-19T20:44:51.6858137Z #29 0.172    • Remote caching disabled
+2026-11-19T20:44:51.6858576Z #29 0.172 
+2026-11-19T20:44:55.6410405Z #29 4.277 @freecodecamp/challenge-linter:build: cache miss, executing 80c694a7bbbdd486
+2026-11-19T20:44:55.6411494Z #29 4.277 @freecodecamp/shared:build: cache miss, executing 9e533b08caa3cab5
+2026-11-19T20:44:55.6412464Z #29 4.277 @freecodecamp/browser-scripts:build: cache miss, executing 66bfdd01c5e3f381
+2026-11-19T20:44:55.8345285Z #29 4.297 @freecodecamp/browser-scripts:build: $ pnpm copy-scripts && pnpm bundle
+2026-11-19T20:44:55.8346498Z #29 4.297 @freecodecamp/challenge-linter:build: $ tsc
+2026-11-19T20:44:55.8347386Z #29 4.301 @freecodecamp/shared:build: $ tsdown --log-level warn --no-clean --format cjs --format esm
+2026-11-19T20:44:55.8348696Z #29 4.320 @freecodecamp/browser-scripts:build: $ tsx ./copy-scripts.ts
+2026-11-19T20:44:55.8845892Z #29 4.521 @freecodecamp/shared:build: 
+2026-11-19T20:44:55.8863394Z #29 4.521 @freecodecamp/shared:build:  WARN  We recommend using the ESM format instead of CommonJS.
+2026-11-19T20:44:55.8886660Z #29 4.521 @freecodecamp/shared:build: The ESM format is compatible with modern platforms and runtimes, and most new libraries are now distributed only in ESM format.
+2026-11-19T20:44:55.8906123Z #29 4.521 @freecodecamp/shared:build: Learn more at https://nodejs.org/en/learn/modules/publishing-a-package#how-did-we-get-here
+2026-11-19T20:44:55.8935498Z #29 4.521 @freecodecamp/shared:build: 
+2026-11-19T20:44:56.0291905Z #29 4.665 @freecodecamp/browser-scripts:build: $ NODE_OPTIONS="--max-old-space-size=7168" webpack -c webpack.config.cjs --env production
+2026-11-19T20:44:57.7455518Z #29 6.382 @freecodecamp/browser-scripts:build: assets by info 1.45 KiB [immutable]
+2026-11-19T20:44:57.7456377Z #29 6.382 @freecodecamp/browser-scripts:build:   asset 480-8f7d15bc6cebd2d66b50.js 494 bytes [emitted] [immutable] [minimized] 1 related asset
+2026-11-19T20:44:57.7457475Z #29 6.382 @freecodecamp/browser-scripts:build:   asset 109-0f0b675988dce54ea885.js 124 bytes [emitted] [immutable] [minimized]
+2026-11-19T20:44:57.7458384Z #29 6.382 @freecodecamp/browser-scripts:build:   asset 283-47dec85584e95f8cd106.js 124 bytes [emitted] [immutable] [minimized]
+2026-11-19T20:44:57.7459212Z #29 6.382 @freecodecamp/browser-scripts:build:   asset 313-4ec2f542346c1c336aa5.js 124 bytes [emitted] [immutable] [minimized]
+2026-11-19T20:44:57.7460072Z #29 6.382 @freecodecamp/browser-scripts:build:   asset 354-79a68476d3a9be74a80c.js 124 bytes [emitted] [immutable] [minimized]
+2026-11-19T20:44:57.7461034Z #29 6.382 @freecodecamp/browser-scripts:build:   asset 437-918f9d881f19c37cd5da.js 124 bytes [emitted] [immutable] [minimized]
+2026-11-19T20:44:57.7461908Z #29 6.382 @freecodecamp/browser-scripts:build:   asset 687-3c3a9f5196c06b48b61e.js 124 bytes [emitted] [immutable] [minimized]
+2026-11-19T20:44:57.7462773Z #29 6.382 @freecodecamp/browser-scripts:build:   asset 40-8f754bb312789ce8b107.js 122 bytes [emitted] [immutable] [minimized]
+2026-11-19T20:44:57.7463544Z #29 6.382 @freecodecamp/browser-scripts:build:   asset 48-9d680fe7bc7160b46c2d.js 122 bytes [emitted] [immutable] [minimized]
+2026-11-19T20:44:57.7464950Z #29 6.382 @freecodecamp/browser-scripts:build: asset typescript-worker.js 203 KiB [emitted] [minimized] (name: typescript-worker) 1 related asset
+2026-11-19T20:44:57.7466038Z #29 6.382 @freecodecamp/browser-scripts:build: asset python-worker.js 22.9 KiB [emitted] [minimized] (name: python-worker) 1 related asset
+2026-11-19T20:44:57.7467024Z #29 6.382 @freecodecamp/browser-scripts:build: asset sass-compile.js 439 bytes [emitted] [minimized] (name: sass-compile) 1 related asset
+2026-11-19T20:44:57.7467761Z #29 6.382 @freecodecamp/browser-scripts:build: runtime modules 7.96 KiB 10 modules
+2026-11-19T20:44:57.7468345Z #29 6.382 @freecodecamp/browser-scripts:build: orphan modules 205 KiB [orphan] 5 modules
+2026-11-19T20:44:57.7468950Z #29 6.382 @freecodecamp/browser-scripts:build: cacheable modules 242 KiB
+2026-11-19T20:44:57.7469485Z #29 6.382 @freecodecamp/browser-scripts:build:   modules by path ./*.ts 215 KiB
+2026-11-19T20:44:57.7470180Z #29 6.382 @freecodecamp/browser-scripts:build:     ./sass-compile.ts + 1 modules 2.21 KiB [built] [code generated]
+2026-11-19T20:44:57.7470980Z #29 6.382 @freecodecamp/browser-scripts:build:     ./python-worker.ts + 2 modules 11.1 KiB [built] [code generated]
+2026-11-19T20:44:57.7471990Z #29 6.382 @freecodecamp/browser-scripts:build:       ModuleConcatenation bailout: Cannot concat with ../../../node_modules/.pnpm/pyodide@0.23.4/node_modules/pyodide/pyodide.js: Module is not in strict mode
+2026-11-19T20:44:57.7473046Z #29 6.382 @freecodecamp/browser-scripts:build:     ./typescript-worker.ts + 2 modules 202 KiB [built] [code generated]
+2026-11-19T20:44:57.7473767Z #29 6.382 @freecodecamp/browser-scripts:build:   modules by path ../../../node_modules/.pnpm/ 26.7 KiB
+2026-11-19T20:44:57.7474832Z #29 6.382 @freecodecamp/browser-scripts:build:     ../../../node_modules/.pnpm/pyodide@0.23.4/node_modules/pyodide/pyodide.js 20.6 KiB [built] [code generated]
+2026-11-19T20:44:57.7475733Z #29 6.382 @freecodecamp/browser-scripts:build:       CommonJS bailout: this is used directly at 1:251-255
+2026-11-19T20:44:57.7476450Z #29 6.382 @freecodecamp/browser-scripts:build:       CommonJS bailout: exports is used directly at 1:87-94
+2026-11-19T20:44:57.7477223Z #29 6.382 @freecodecamp/browser-scripts:build:       Statement (ExpressionStatement) with side effects in source code at 1:0-21092
+2026-11-19T20:44:57.7478008Z #29 6.382 @freecodecamp/browser-scripts:build:       ModuleConcatenation bailout: Module is not in strict mode
+2026-11-19T20:44:57.7478848Z #29 6.382 @freecodecamp/browser-scripts:build:     ../../../node_modules/.pnpm/process@0.11.10/node_modules/process/browser.js 5.29 KiB [built] [code generated]
+2026-11-19T20:44:57.7479722Z #29 6.382 @freecodecamp/browser-scripts:build:       CommonJS bailout: module.exports is used directly at 2:14-28
+2026-11-19T20:44:57.7480509Z #29 6.382 @freecodecamp/browser-scripts:build:       Statement (VariableDeclaration) with side effects in source code at 2:0-34
+2026-11-19T20:44:57.7481337Z #29 6.382 @freecodecamp/browser-scripts:build:       ModuleConcatenation bailout: Module is not in strict mode
+2026-11-19T20:44:57.7482242Z #29 6.382 @freecodecamp/browser-scripts:build:     ../../../node_modules/.pnpm/node-fetch@2.7.0/node_modules/node-fetch/browser.js 781 bytes [built] [code generated]
+2026-11-19T20:44:57.7483280Z #29 6.382 @freecodecamp/browser-scripts:build:       CommonJS bailout: exports is used directly at 16:17-24
+2026-11-19T20:44:57.7484123Z #29 6.382 @freecodecamp/browser-scripts:build:       CommonJS bailout: module.exports is used directly at 16:0-14
+2026-11-19T20:44:57.7485133Z #29 6.382 @freecodecamp/browser-scripts:build:       Statement (VariableDeclaration) with side effects in source code at 14:0-31
+2026-11-19T20:44:57.7486332Z #29 6.382 @freecodecamp/browser-scripts:build:       ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and no usage info in python-worker)
+2026-11-19T20:44:57.7487444Z #29 6.382 @freecodecamp/browser-scripts:build:   + 8 modules
+2026-11-19T20:44:57.7487986Z #29 6.382 @freecodecamp/browser-scripts:build: webpack 5.112.2 compiled successfully in 1205 ms
+2026-11-19T20:44:57.9354553Z #29 6.407 @freecodecamp/challenge-builder:build: cache miss, executing 9bbea3b478741349
+2026-11-19T20:44:57.9355312Z #29 6.420 @freecodecamp/challenge-builder:build: $ tsc
+2026-11-19T20:44:57.9699303Z #29 6.606 @freecodecamp/curriculum:setup: cache miss, executing c4f7deb019b87bc2
+2026-11-19T20:44:58.1346450Z #29 6.619 @freecodecamp/curriculum:setup: $ tsc
+2026-11-19T20:44:58.1477782Z #29 6.784 @freecodecamp/curriculum:build: cache miss, executing 3163644d10d19142
+2026-11-19T20:44:58.3104028Z #29 6.796 @freecodecamp/curriculum:build: $ node ./dist/generate/build-curriculum
+2026-11-19T20:45:46.7805019Z #29 55.42 @freecodecamp/api:build: cache miss, executing 1f4e96320da62f3c
+2026-11-19T20:45:46.9537093Z #29 55.44 @freecodecamp/api:build: $ tsc -p tsconfig.build.json
+2026-11-19T20:45:49.3858041Z #29 58.02 
+2026-11-19T20:45:49.3858453Z #29 58.02  Tasks:    7 successful, 7 total
+2026-11-19T20:45:49.3858840Z #29 58.02 Cached:    0 cached, 7 total
+2026-11-19T20:45:49.5360344Z #29 58.02   Time:    57.889s 
+2026-11-19T20:45:49.5360670Z #29 58.02 
+2026-11-19T20:45:49.7681642Z #29 DONE 58.4s
+2026-11-19T20:45:49.9415364Z 
+2026-11-19T20:45:49.9424014Z #30 [stage-2 3/8] COPY --from=builder --chown=node:node /home/node/build/api/dist/ ./
+2026-11-19T20:45:49.9425051Z #30 DONE 0.0s
+2026-11-19T20:45:49.9425322Z 
+2026-11-19T20:45:49.9425760Z #31 [stage-2 4/8] COPY --from=builder --chown=node:node /home/node/build/api/package.json api/
+2026-11-19T20:45:49.9426217Z #31 DONE 0.0s
+2026-11-19T20:45:49.9426430Z 
+2026-11-19T20:45:49.9426778Z #32 [stage-2 5/8] COPY --from=builder --chown=node:node /home/node/build/curriculum/generated/curriculum.json curriculum/generated/
+2026-11-19T20:45:49.9427917Z #32 DONE 0.1s
+2026-11-19T20:45:53.2930363Z 
+2026-11-19T20:45:53.2931415Z #33 [stage-2 6/8] COPY --from=builder --chown=node:node /home/node/build/packages/ packages/
+2026-11-19T20:45:53.4666891Z #33 DONE 0.0s
+2026-11-19T20:45:53.4667516Z 
+2026-11-19T20:45:53.4667894Z #34 [stage-2 7/8] COPY --from=deps --chown=node:node /home/node/build/node_modules/ node_modules/
+2026-11-19T20:45:54.2879457Z #34 DONE 1.0s
+2026-11-19T20:45:54.4514729Z 
+2026-11-19T20:45:54.4516249Z #35 [stage-2 8/8] COPY --from=deps --chown=node:node /home/node/build/api/node_modules/ api/node_modules/
+2026-11-19T20:45:54.4516863Z #35 DONE 0.0s
+2026-11-19T20:45:54.4517076Z 
+2026-11-19T20:45:54.4517470Z #36 exporting to image
+2026-11-19T20:45:54.4517773Z #36 exporting layers
+2026-11-19T20:45:55.5874505Z #36 exporting layers 1.3s done
+2026-11-19T20:45:55.5983469Z #36 writing image sha256:22c85f5850ae0871e2f7e8c625b2007d7d3a21e6a48ede4e8ad7fa89639d41e3 done
+2026-11-19T20:45:55.5984776Z #36 naming to docker.io/library/fcc-api done
+2026-11-19T20:45:55.5985471Z #36 DONE 1.3s
+2026-11-19T20:45:55.6112332Z ##[group]Run docker save fcc-api > api-artifact.tar
+2026-11-19T20:45:55.6112798Z [36;1mdocker save fcc-api > api-artifact.tar[0m
+2026-11-19T20:45:55.6142346Z shell: /usr/bin/bash -e {0}
+2026-11-19T20:45:55.6142755Z ##[endgroup]
+2026-11-19T20:46:05.4888990Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+2026-11-19T20:46:05.4889452Z with:
+2026-11-19T20:46:05.4889673Z   name: api-artifact
+2026-11-19T20:46:05.4889896Z   path: api-artifact.tar
+2026-11-19T20:46:05.4890154Z   retention-days: 1
+2026-11-19T20:46:05.4890405Z   if-no-files-found: warn
+2026-11-19T20:46:05.4890650Z   compression-level: 6
+2026-11-19T20:46:05.4890884Z   overwrite: false
+2026-11-19T20:46:05.4891115Z   include-hidden-files: false
+2026-11-19T20:46:05.4891375Z   archive: true
+2026-11-19T20:46:05.4891637Z ##[endgroup]
+2026-11-19T20:46:05.6093303Z With the provided path, there will be 1 file uploaded
+2026-11-19T20:46:05.6106515Z Artifact name is valid!
+2026-11-19T20:46:05.6111221Z Root directory input is valid!
+2026-11-19T20:46:06.2175033Z Uploading artifact: api-artifact.zip
+2026-11-19T20:46:06.2202075Z Beginning upload of artifact content to blob storage
+2026-11-19T20:46:08.1235623Z Uploaded bytes 8388608
+2026-11-19T20:46:08.5518664Z Uploaded bytes 16777216
+2026-11-19T20:46:08.7142494Z Uploaded bytes 25165824
+2026-11-19T20:46:09.0976811Z Uploaded bytes 33554432
+2026-11-19T20:46:09.2479948Z Uploaded bytes 41943040
+2026-11-19T20:46:09.7526448Z Uploaded bytes 50331648
+2026-11-19T20:46:10.2485244Z Uploaded bytes 58720256
+2026-11-19T20:46:10.8405246Z Uploaded bytes 67108864
+2026-11-19T20:46:11.3376383Z Uploaded bytes 75497472
+2026-11-19T20:46:11.9842888Z Uploaded bytes 83886080
+2026-11-19T20:46:12.6217489Z Uploaded bytes 92274688
+2026-11-19T20:46:13.1830604Z Uploaded bytes 100663296
+2026-11-19T20:46:13.6968192Z Uploaded bytes 109051904
+2026-11-19T20:46:14.4216473Z Uploaded bytes 117440512
+2026-11-19T20:46:15.0312029Z Uploaded bytes 125829120
+2026-11-19T20:46:15.5411043Z Uploaded bytes 134217728
+2026-11-19T20:46:16.4302019Z Uploaded bytes 142606336
+2026-11-19T20:46:17.0763281Z Uploaded bytes 150994944
+2026-11-19T20:46:17.6811973Z Uploaded bytes 159383552
+2026-11-19T20:46:18.5295322Z Uploaded bytes 167772160
+2026-11-19T20:46:19.3491328Z Uploaded bytes 176160768
+2026-11-19T20:46:20.1455026Z Uploaded bytes 184549376
+2026-11-19T20:46:20.6847580Z Uploaded bytes 192937984
+2026-11-19T20:46:21.2242499Z Uploaded bytes 201326592
+2026-11-19T20:46:21.9206167Z Uploaded bytes 209715200
+2026-11-19T20:46:22.5644408Z Uploaded bytes 218103808
+2026-11-19T20:46:23.1223340Z Uploaded bytes 226492416
+2026-11-19T20:46:23.7357994Z Uploaded bytes 234881024
+2026-11-19T20:46:24.2495349Z Uploaded bytes 243269632
+2026-11-19T20:46:24.7899752Z Uploaded bytes 251658240
+2026-11-19T20:46:25.5135047Z Uploaded bytes 260046848
+2026-11-19T20:46:26.0071446Z Uploaded bytes 268435456
+2026-11-19T20:46:26.5465451Z Uploaded bytes 276824064
+2026-11-19T20:46:27.2075816Z Uploaded bytes 285212672
+2026-11-19T20:46:27.7770178Z Uploaded bytes 293601280
+2026-11-19T20:46:28.2215306Z Uploaded bytes 301989888
+2026-11-19T20:46:28.7140219Z Uploaded bytes 310378496
+2026-11-19T20:46:29.2155938Z Uploaded bytes 318767104
+2026-11-19T20:46:29.8259264Z Uploaded bytes 327155712
+2026-11-19T20:46:30.4294919Z Uploaded bytes 335544320
+2026-11-19T20:46:31.0656800Z Uploaded bytes 343932928
+2026-11-19T20:46:31.5321733Z Uploaded bytes 352321536
+2026-11-19T20:46:32.2543741Z Uploaded bytes 360710144
+2026-11-19T20:46:32.3949474Z Uploaded bytes 369098752
+2026-11-19T20:46:32.9445484Z Uploaded bytes 377487360
+2026-11-19T20:46:33.5134788Z Uploaded bytes 385875968
+2026-11-19T20:46:33.6079994Z Uploaded bytes 394264576
+2026-11-19T20:46:34.0736997Z Uploaded bytes 402653184
+2026-11-19T20:46:34.5687514Z Uploaded bytes 411041792
+2026-11-19T20:46:35.0296136Z Uploaded bytes 419430400
+2026-11-19T20:46:35.5008680Z Uploaded bytes 427819008
+2026-11-19T20:46:35.9341489Z Uploaded bytes 436207616
+2026-11-19T20:46:36.5845605Z Uploaded bytes 444596224
+2026-11-19T20:46:37.1687757Z Uploaded bytes 452984832
+2026-11-19T20:46:38.0779401Z Uploaded bytes 461373440
+2026-11-19T20:46:38.3692656Z Uploaded bytes 469762048
+2026-11-19T20:46:38.9878468Z Uploaded bytes 478150656
+2026-11-19T20:46:39.4422606Z Uploaded bytes 483704996
+2026-11-19T20:46:39.5366071Z Finished uploading artifact content to blob storage!
+2026-11-19T20:46:39.5366871Z SHA256 digest of uploaded artifact is 3e80b91e124e65f3d006ee8e238ddcd49cfa88b63f5b8dd59a2865ea88815cb3
+2026-11-19T20:46:39.5367432Z Finalizing artifact upload
+2026-11-19T20:46:40.0905160Z Artifact api-artifact successfully finalized. Artifact ID 14572847095
+2026-11-19T20:46:40.0905890Z Artifact api-artifact has been successfully uploaded! Final size is 483704996 bytes. Artifact ID is 14572847095
+2026-11-19T20:46:40.0909856Z Artifact download URL: https://github.com/boba-benchmarks/freecodecamp/actions/runs/44611494155/artifacts/14572847095
+2026-11-19T20:46:40.1111301Z Post job cleanup.
+2026-11-19T20:46:40.1787262Z [command]/usr/bin/git version
+2026-11-19T20:46:40.1828758Z git version 2.56.1
+2026-11-19T20:46:40.1852797Z Temporarily overriding HOME='/home/runner/work/_temp/9ddd6f9a-152c-4a10-8338-d0abf2864efc' before making global git config changes
+2026-11-19T20:46:40.1854162Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-19T20:46:40.1857159Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/freecodecamp/freecodecamp
+2026-11-19T20:46:40.1884465Z Removing SSH command configuration
+2026-11-19T20:46:40.1889450Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T20:46:40.1915615Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T20:46:40.2116788Z Entering 'curriculum/i18n-curriculum'
+2026-11-19T20:46:40.2422036Z Entering 'tools/challenge-editor'
+2026-11-19T20:46:40.2477671Z Removing HTTP extra header
+2026-11-19T20:46:40.2478250Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T20:46:40.2508233Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T20:46:40.2687755Z Entering 'curriculum/i18n-curriculum'
+2026-11-19T20:46:40.2974628Z Entering 'tools/challenge-editor'
+2026-11-19T20:46:40.3016851Z Removing includeIf entries pointing to credentials config files
+2026-11-19T20:46:40.3021501Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T20:46:40.3051035Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T20:46:40.3219094Z Entering 'curriculum/i18n-curriculum'
+2026-11-19T20:46:40.3232300Z file:/home/runner/work/freecodecamp/freecodecamp/.git/modules/curriculum/i18n-curriculum/config	remote.origin.url
+2026-11-19T20:46:40.3494952Z Entering 'tools/challenge-editor'
+2026-11-19T20:46:40.3508804Z file:/home/runner/work/freecodecamp/freecodecamp/.git/modules/tools/challenge-editor/config	remote.origin.url
+2026-11-19T20:46:40.3532094Z [command]/usr/bin/git config --file /home/runner/work/freecodecamp/freecodecamp/.git/modules/curriculum/i18n-curriculum/config --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T20:46:40.3565416Z [command]/usr/bin/git config --file /home/runner/work/freecodecamp/freecodecamp/.git/modules/tools/challenge-editor/config --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T20:46:40.3713362Z Cleaning up orphan processes
