@@ -1,0 +1,12 @@
+[
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/freecodecamp/runs/136109681710",
+  "conclusion": "failure",
+  "started_at": "2026-11-20T05:41:40Z",
+  "completed_at": "2026-11-20T05:45:13Z",
+  "title": "1 of 3 Boba jobs failed",
+  "summary": "This check covers every Boba job in this workflow run. Each job's own results are in its linked check.\n\n| Job | Result | Detail |\n| --- | --- | --- |\n| Build (boba-standard) | **Failed** | The job ended (failure) before Boba reported a result |\n| Build E2E API (boba-standard) | Passed | The job ended (success) |\n| E2E chromium (${{ inputs.runner }}) | Passed | The job ended (skipped) |",
+  "text": null
+ }
+]
