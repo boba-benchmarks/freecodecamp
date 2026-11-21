@@ -1,0 +1,22 @@
+[
+ {
+  "name": "Boba / E2E chromium (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/freecodecamp/runs/136824595138",
+  "conclusion": "success",
+  "started_at": "2026-11-21T10:57:18Z",
+  "completed_at": "2026-11-21T11:00:05Z",
+  "title": "274 passed",
+  "summary": "### \u2705 All 274 tests passed in 2 min 47 s\n\nOn b754884 \u00b7 4 min 30 s into the job \u00b7 17 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_979a72cc66d9e8fc/648324bb13088f0fa44b30fc19255d67/html/index.html)",
+  "text": null
+ },
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/freecodecamp/runs/136822279333",
+  "conclusion": "success",
+  "started_at": "2026-11-21T10:50:07Z",
+  "completed_at": "2026-11-21T11:00:13Z",
+  "title": "All 3 Boba jobs passed",
+  "summary": "This check covers every Boba job in this workflow run. Each job's own results are in its linked check.\n\n| Job | Result | Detail |\n| --- | --- | --- |\n| Build (boba-standard) | Passed | The job ended (success) |\n| Build E2E API (boba-standard) | Passed | The job ended (success) |\n| [E2E chromium (boba-standard)](https://github.com/boba-benchmarks/freecodecamp/runs/136824595138) | Passed | 274 passed |",
+  "text": null
+ }
+]
