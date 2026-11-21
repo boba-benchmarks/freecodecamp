@@ -1,0 +1,421 @@
+[
+ {
+  "id": 136809269772,
+  "name": "Build E2E API (boba-standard)",
+  "html_url": "https://github.com/boba-benchmarks/freecodecamp/actions/runs/44891879718/job/136809269772",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-21T09:55:47Z",
+  "started_at": "2026-11-21T09:55:57Z",
+  "completed_at": "2026-11-21T09:59:17Z",
+  "labels": [
+   "coldtea-boba"
+  ],
+  "runner_name": "boba-136809269772-1",
+  "runner_group_name": "coldtea boba - freecodecamp",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-21T09:55:57Z",
+    "completed_at": "2026-11-21T09:55:58Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-21T09:55:58Z",
+    "completed_at": "2026-11-21T09:55:58Z"
+   },
+   {
+    "name": "Checkout Source Files",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-21T09:55:58Z",
+    "completed_at": "2026-11-21T09:56:28Z"
+   },
+   {
+    "name": "Create Image",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-21T09:56:28Z",
+    "completed_at": "2026-11-21T09:58:36Z"
+   },
+   {
+    "name": "Save Image",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-21T09:58:36Z",
+    "completed_at": "2026-11-21T09:58:47Z"
+   },
+   {
+    "name": "Upload API Artifact",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-21T09:58:47Z",
+    "completed_at": "2026-11-21T09:59:13Z"
+   },
+   {
+    "name": "Post Checkout Source Files",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 12,
+    "started_at": "2026-11-21T09:59:13Z",
+    "completed_at": "2026-11-21T09:59:13Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 13,
+    "started_at": "2026-11-21T09:59:13Z",
+    "completed_at": "2026-11-21T09:59:13Z"
+   }
+  ]
+ },
+ {
+  "id": 136809269902,
+  "name": "Build (boba-standard)",
+  "html_url": "https://github.com/boba-benchmarks/freecodecamp/actions/runs/44891879718/job/136809269902",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-21T09:55:47Z",
+  "started_at": "2026-11-21T09:55:58Z",
+  "completed_at": "2026-11-21T10:01:20Z",
+  "labels": [
+   "coldtea-boba"
+  ],
+  "runner_name": "boba-136809269902-1",
+  "runner_group_name": "coldtea boba - freecodecamp",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-21T09:55:59Z",
+    "completed_at": "2026-11-21T09:56:00Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-21T09:56:00Z",
+    "completed_at": "2026-11-21T09:56:00Z"
+   },
+   {
+    "name": "Checkout",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-21T09:56:00Z",
+    "completed_at": "2026-11-21T09:56:30Z"
+   },
+   {
+    "name": "Use Node.js",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-21T09:56:30Z",
+    "completed_at": "2026-11-21T09:56:30Z"
+   },
+   {
+    "name": "Install pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-21T09:56:30Z",
+    "completed_at": "2026-11-21T09:56:34Z"
+   },
+   {
+    "name": "Set freeCodeCamp Environment Variables",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-21T09:56:34Z",
+    "completed_at": "2026-11-21T09:56:34Z"
+   },
+   {
+    "name": "Install and Build",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-21T09:56:34Z",
+    "completed_at": "2026-11-21T10:00:38Z"
+   },
+   {
+    "name": "Upload Client Artifact",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-21T10:00:38Z",
+    "completed_at": "2026-11-21T10:01:16Z"
+   },
+   {
+    "name": "Post Install pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 14,
+    "started_at": "2026-11-21T10:01:16Z",
+    "completed_at": "2026-11-21T10:01:16Z"
+   },
+   {
+    "name": "Post Use Node.js",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 15,
+    "started_at": "2026-11-21T10:01:16Z",
+    "completed_at": "2026-11-21T10:01:16Z"
+   },
+   {
+    "name": "Post Checkout",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 16,
+    "started_at": "2026-11-21T10:01:16Z",
+    "completed_at": "2026-11-21T10:01:16Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 17,
+    "started_at": "2026-11-21T10:01:16Z",
+    "completed_at": "2026-11-21T10:01:16Z"
+   }
+  ]
+ },
+ {
+  "id": 136810568313,
+  "name": "E2E chromium (boba-standard)",
+  "html_url": "https://github.com/boba-benchmarks/freecodecamp/actions/runs/44891879718/job/136810568313",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-11-21T10:01:21Z",
+  "started_at": "2026-11-21T10:01:29Z",
+  "completed_at": "2026-11-21T10:09:26Z",
+  "labels": [
+   "coldtea-boba"
+  ],
+  "runner_name": "boba-136810568313-1",
+  "runner_group_name": "coldtea boba - freecodecamp",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-21T10:01:30Z",
+    "completed_at": "2026-11-21T10:01:32Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-21T10:01:32Z",
+    "completed_at": "2026-11-21T10:01:32Z"
+   },
+   {
+    "name": "Set Action Environment Variables",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-21T10:01:32Z",
+    "completed_at": "2026-11-21T10:01:32Z"
+   },
+   {
+    "name": "Checkout Source Files",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-21T10:01:32Z",
+    "completed_at": "2026-11-21T10:01:35Z"
+   },
+   {
+    "name": "Download Client Artifact",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-21T10:01:35Z",
+    "completed_at": "2026-11-21T10:03:06Z"
+   },
+   {
+    "name": "Checkout client-config",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-21T10:03:06Z",
+    "completed_at": "2026-11-21T10:03:07Z"
+   },
+   {
+    "name": "Move serve.json to Public Folder",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 7,
+    "started_at": "2026-11-21T10:03:07Z",
+    "completed_at": "2026-11-21T10:03:07Z"
+   },
+   {
+    "name": "Download Api Artifact",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-21T10:03:07Z",
+    "completed_at": "2026-11-21T10:05:40Z"
+   },
+   {
+    "name": "Load API Image",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 9,
+    "started_at": "2026-11-21T10:05:40Z",
+    "completed_at": "2026-11-21T10:05:47Z"
+   },
+   {
+    "name": "Use Node.js",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-21T10:05:47Z",
+    "completed_at": "2026-11-21T10:05:47Z"
+   },
+   {
+    "name": "Install pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 11,
+    "started_at": "2026-11-21T10:05:47Z",
+    "completed_at": "2026-11-21T10:05:50Z"
+   },
+   {
+    "name": "Install Dependencies",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 12,
+    "started_at": "2026-11-21T10:05:50Z",
+    "completed_at": "2026-11-21T10:05:54Z"
+   },
+   {
+    "name": "Set freeCodeCamp Environment Variables (needed by api)",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 13,
+    "started_at": "2026-11-21T10:05:54Z",
+    "completed_at": "2026-11-21T10:05:54Z"
+   },
+   {
+    "name": "Install playwright dependencies",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 14,
+    "started_at": "2026-11-21T10:05:54Z",
+    "completed_at": "2026-11-21T10:05:58Z"
+   },
+   {
+    "name": "Install",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 15,
+    "started_at": "2026-11-21T10:05:58Z",
+    "completed_at": "2026-11-21T10:05:58Z"
+   },
+   {
+    "name": "Start apps",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 16,
+    "started_at": "2026-11-21T10:05:58Z",
+    "completed_at": "2026-11-21T10:06:14Z"
+   },
+   {
+    "name": "Seed Exam Data",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 17,
+    "started_at": "2026-11-21T10:06:14Z",
+    "completed_at": "2026-11-21T10:06:14Z"
+   },
+   {
+    "name": "Set up the e2e package",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 18,
+    "started_at": "2026-11-21T10:06:14Z",
+    "completed_at": "2026-11-21T10:06:16Z"
+   },
+   {
+    "name": "Run playwright tests on Boba",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 19,
+    "started_at": "2026-11-21T10:06:16Z",
+    "completed_at": "2026-11-21T10:09:20Z"
+   },
+   {
+    "name": "Run playwright tests",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 20,
+    "started_at": "2026-11-21T10:09:20Z",
+    "completed_at": "2026-11-21T10:09:20Z"
+   },
+   {
+    "name": "Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 21,
+    "started_at": "2026-11-21T10:09:20Z",
+    "completed_at": "2026-11-21T10:09:20Z"
+   },
+   {
+    "name": "Post Install pnpm",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 39,
+    "started_at": "2026-11-21T10:09:20Z",
+    "completed_at": "2026-11-21T10:09:20Z"
+   },
+   {
+    "name": "Post Use Node.js",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 40,
+    "started_at": "2026-11-21T10:09:20Z",
+    "completed_at": "2026-11-21T10:09:20Z"
+   },
+   {
+    "name": "Post Checkout client-config",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 41,
+    "started_at": "2026-11-21T10:09:20Z",
+    "completed_at": "2026-11-21T10:09:20Z"
+   },
+   {
+    "name": "Post Checkout Source Files",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 42,
+    "started_at": "2026-11-21T10:09:20Z",
+    "completed_at": "2026-11-21T10:09:20Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 43,
+    "started_at": "2026-11-21T10:09:20Z",
+    "completed_at": "2026-11-21T10:09:20Z"
+   }
+  ]
+ }
+]
