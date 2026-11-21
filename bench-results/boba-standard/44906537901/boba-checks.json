@@ -1,0 +1,22 @@
+[
+ {
+  "name": "Boba / E2E chromium (boba-standard)",
+  "url": "https://github.com/boba-benchmarks/freecodecamp/runs/136855796215",
+  "conclusion": "success",
+  "started_at": "2026-11-21T13:05:58Z",
+  "completed_at": "2026-11-21T13:08:49Z",
+  "title": "274 passed, 3 flaky",
+  "summary": "### \u2705 All 274 tests passed in 2 min 51 s\n\nOn b754884 \u00b7 4 min 30 s into the job \u00b7 17 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_b7ad7e7edf37e9cf/2b191aeb285089636ae4e88dc1f991fe/html/index.html)\n\n<details>\n<summary>3 flaky tests, not blocking</summary>\n\n`should close the modal and sign the user out after they fill in the verify input text and click delete` failed once here, then passed on retry\n`should display email verification alert after email update` failed once here, then passed on retry\n`User can use shortcuts in and around the editor` failed once here, then passed on retry\n\n</details>\n\nThe full report was withheld: it held a secret from this job.",
+  "text": null
+ },
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/freecodecamp/runs/136853265136",
+  "conclusion": "success",
+  "started_at": "2026-11-21T12:58:59Z",
+  "completed_at": "2026-11-21T13:09:03Z",
+  "title": "All 3 Boba jobs passed",
+  "summary": "This check covers every Boba job in this workflow run. Each job's own results are in its linked check.\n\n| Job | Result | Detail |\n| --- | --- | --- |\n| Build (boba-standard) | Passed | The job ended (success) |\n| Build E2E API (boba-standard) | Passed | The job ended (success) |\n| [E2E chromium (boba-standard)](https://github.com/boba-benchmarks/freecodecamp/runs/136855796215) | Passed | 274 passed, 3 flaky |",
+  "text": null
+ }
+]
