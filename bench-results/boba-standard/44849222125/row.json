@@ -1,0 +1,52 @@
+{
+ "at": "2026-11-21T01:34:27+00:00",
+ "suite": "freecodecamp",
+ "repo": "boba-benchmarks/freecodecamp",
+ "runner": "boba-standard",
+ "shards": "1",
+ "note": "after-peer-start",
+ "run": "https://github.com/boba-benchmarks/freecodecamp/actions/runs/44849222125",
+ "run_id": 44849222125,
+ "sha": "b75488463cbaabdacb22a62382afd3fa40e3b3a4",
+ "conclusion": "success",
+ "wall_s": 774,
+ "queue_s": 9,
+ "job_s": 970,
+ "jobs": 3,
+ "job_max_s": 451,
+ "vcpu_min": 53.82,
+ "billed_min": null,
+ "usd": 0.054,
+ "tests": {
+  "passed": 274,
+  "failed": 0,
+  "flaky": 4,
+  "skipped": 17,
+  "checks": 1,
+  "conclusions": [
+   "success"
+  ],
+  "failed_titles": []
+ },
+ "boba_jobs": [
+  {
+   "boba_job_id": "bj_fa8c4770ac0cf27e",
+   "tier": "standard",
+   "warm": true,
+   "outcome": "done",
+   "forks": 6,
+   "start_plan_forks": 4,
+   "start_plan_reason": "split",
+   "start_plan_granted": 4,
+   "start_plan_error": null,
+   "vcpu_minutes": 53.82,
+   "billed_vcpu_minutes": 53.82,
+   "billing_status": "reported",
+   "duration_ms": 455744,
+   "hosts": 1,
+   "split_declined_reason": null,
+   "tests_ms": 190025
+  }
+ ],
+ "price_basis": "billed"
+}
